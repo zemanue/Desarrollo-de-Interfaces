@@ -1,0 +1,45 @@
+h1 {
+    color: red;
+    font-size: 20px;
+}
+
+h2 {
+    color: orange;
+    font-size: 15px;
+}
+
+p {
+    font-size: 13px;
+    color: green;
+}
+
+div {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+b {
+    color: fuchsia;
+    font-style: italic;
+}
+
+.resaltado {
+    background-color: yellow;
+}
+
+.rojo {
+    border: 1px solid red;
+}
+
+.verde {
+    border: 1px solid green;
+    color: green;
+}
+
+.naranja {
+    border: 1px solid orange;
+}
+
+#secundario {
+    background-color: rgb(185, 183, 183, 0.5);
+}
