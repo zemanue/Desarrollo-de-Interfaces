@@ -5,7 +5,7 @@ h1 {
 
 h2 {
     color: orange;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 p {
@@ -18,13 +18,16 @@ div {
     padding: 10px;
 }
 
-b {
-    color: fuchsia;
-    font-style: italic;
+span {
+    border: 1px solid;
 }
 
 .resaltado {
     background-color: yellow;
+}
+
+.resaltadoNegro {
+    background-color: black;
 }
 
 .rojo {
@@ -38,6 +41,22 @@ b {
 
 .naranja {
     border: 1px solid orange;
+}
+
+.marron {
+    color: maroon;
+    font-weight: bold;
+}
+
+.rosa {
+    color: fuchsia;
+    font-style: italic;
+}
+
+.morado {
+    color: purple;
+    font-weight: normal;
+    text-decoration: underline;
 }
 
 #secundario {
