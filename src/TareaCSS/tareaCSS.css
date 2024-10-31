@@ -62,3 +62,15 @@ span {
 #secundario {
     background-color: rgb(185, 183, 183, 0.5);
 }
+
+#titulo1:hover {
+    color: green;
+}
+
+#titulo2:hover {
+    font-size: 25px; 
+}
+
+#titulo3:hover {
+    font-style: italic;
+}
