@@ -66,7 +66,22 @@ console.log(simbolo)
 console.log(granEntero)
 
 // 7. A continuación, modifica los valores de las variables por otros de distinto tipo
-
+nombre = Symbol("nombre")
+edad = "veinticinco"
+altura = null
+esEstudiante = "sí"
+indefinido = 4.5
+nulo = false
+simbolo = 2307199254740991n
+granEntero = undefined
+console.log(nombre)
+console.log(edad)
+console.log(altura)
+console.log(esEstudiante)
+console.log(indefinido)
+console.log(nulo)
+console.log(simbolo)
+console.log(granEntero)
 
 // 8. Declara constantes con valores asociados a todos los tipos de datos primitivos
 
