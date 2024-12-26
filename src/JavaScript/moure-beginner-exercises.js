@@ -28,6 +28,7 @@ let simbolo = Symbol("simbolo")
 let granEntero = 9007199254740991n
 
 // 4. Imprime por consola el valor de todas las variables
+console.log("Valor de las variables:")
 console.log(nombre)
 console.log(edad)
 console.log(altura)
@@ -38,6 +39,7 @@ console.log(simbolo)
 console.log(granEntero)
 
 // 5. Imprime por consola el tipo de todas las variables
+console.log("Tipo de las variables:")
 console.log(typeof nombre)
 console.log(typeof edad)
 console.log(typeof altura)
@@ -56,6 +58,7 @@ esEstudiante = false
 // nulo se mantiene igual
 simbolo = Symbol("otro simbolo")
 granEntero = 1007199254740992n
+console.log("Nuevos valores de las variables:")
 console.log(nombre)
 console.log(edad)
 console.log(altura)
@@ -66,14 +69,15 @@ console.log(simbolo)
 console.log(granEntero)
 
 // 7. A continuación, modifica los valores de las variables por otros de distinto tipo
-nombre = Symbol("nombre")
+nombre = Symbol("Luis")
 edad = "veinticinco"
 altura = null
-esEstudiante = "sí"
+esEstudiante = 1
 indefinido = 4.5
 nulo = false
 simbolo = 2307199254740991n
 granEntero = undefined
+console.log("Nuevos valores de distinto tipo:")
 console.log(nombre)
 console.log(edad)
 console.log(altura)
