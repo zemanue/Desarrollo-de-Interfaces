@@ -88,10 +88,24 @@ console.log(simbolo)
 console.log(granEntero)
 
 // 8. Declara constantes con valores asociados a todos los tipos de datos primitivos
-
+console.log("Valores de las constantes:")
+const constanteString = "Macarena"
+const constanteNumber = 19
+const constanteBoolean = true
+const constanteUndefined = undefined
+const constanteNull = null
+const constanteSymbol = Symbol("simbolo")
+const constanteBigint = 9007199254740991n
 
 // 9. A continuación, modifica los valores de las constantes
-
+console.log("Intentando modificar los valores de las constantes:")
+// constanteString = "Paco"
+// constanteNumber = 52
+// constanteBoolean = false
+// constanteUndefined = 0.1
+// constanteNull = "nulo"
+// constanteSymbol = Symbol("otro simbolo")
+// constanteBigint = 1007199254740992n
 
 // 10. Comenta las líneas que produzcan algún tipo de error al ejecutarse
-
+console.log("No se pueden modificar los valores de las constantes, sea cual sea su tipo de dato");
