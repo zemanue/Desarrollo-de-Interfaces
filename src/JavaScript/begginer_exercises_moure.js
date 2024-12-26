@@ -48,7 +48,22 @@ console.log(typeof simbolo);
 console.log(typeof granEntero);
 
 // 6. A continuación, modifica los valores de las variables por otros del mismo tipo
-
+nombre = "Paco";
+edad = 52;
+altura = 1.80;
+esEstudiante = false;
+// indefinido se mantiene igual
+// nulo se mantiene igual
+simbolo = Symbol("otro simbolo");
+granEntero = 1007199254740992n;
+console.log(nombre);
+console.log(edad); 
+console.log(altura);
+console.log(esEstudiante);
+console.log(indefinido);
+console.log(nulo);
+console.log(simbolo);
+console.log(granEntero);
 
 // 7. A continuación, modifica los valores de las variables por otros de distinto tipo
 
