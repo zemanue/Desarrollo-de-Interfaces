@@ -10,7 +10,7 @@ let incremento = 0
 incremento++
 let decremento = 0
 decremento--
-console.log("Operaciones aritméticas:")
+console.log("OPERADORES ARITMÉTICOS:")
 console.log(suma)
 console.log(resta)
 console.log(multiplicacion)
@@ -22,7 +22,22 @@ console.log(decremento)
 
 // 2. Crea una variable para cada tipo de operación de asignación,
 //    que haga uso de las variables utilizadas para las operaciones aritméticas
-
+suma = 10
+suma += 3
+resta -= 3
+multiplicacion *= 3
+division /= 3
+modulo %= 3
+exponente **= 3
+console.log("Valor de las variables usando OPERADORES DE ASIGNACIÓN:")
+console.log(suma)
+console.log(resta)
+console.log(multiplicacion)
+console.log(division)
+console.log(modulo)
+console.log(exponente)
+console.log(incremento)
+console.log(decremento)
 
 // 3. Imprime 5 comparaciones verdaderas con diferentes operadores de comparación
 
