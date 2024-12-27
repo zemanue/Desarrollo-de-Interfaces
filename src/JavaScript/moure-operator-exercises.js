@@ -79,5 +79,10 @@ let estaLloviendo = true
 let mensaje = estaLloviendo ? "Lleva paraguas" : "No hace falta paraguas"
 console.log(mensaje)
 
-// 10. Combina operadores aritméticos, de comparáción y lógicas
-
+// 10. Combina operadores aritméticos, de comparación y lógicos
+console.log("Operadores combinados:")
+let numero = 9
+numero++
+let esPar = (numero % 2) === 0
+let esPositivo = numero > 0
+let esParYPositivo = esPar && esPositivo
