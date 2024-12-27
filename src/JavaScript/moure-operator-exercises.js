@@ -58,19 +58,26 @@ console.log(50 == 9)
 console.log(50 === "50")
 
 // 5. Utiliza el operador lógico and
-
+console.log("Operador lógico and:")
+console.log(true && false)
 
 // 6. Utiliza el operador lógico or
-
+console.log("Operador lógico or:")
+console.log(true || false)
 
 // 7. Combina ambos operadores lógicos
-
+console.log("Operadores lógicos combinados:")
+console.log(false && false || true)
 
 // 8. Añade alguna negación
-
+console.log("Operador lógico not")
+console.log(!true)
 
 // 9. Utiliza el operador ternario
-
+console.log("Operador ternario:")
+let estaLloviendo = true
+let mensaje = estaLloviendo ? "Lleva paraguas" : "No hace falta paraguas"
+console.log(mensaje)
 
 // 10. Combina operadores aritméticos, de comparáción y lógicas
 
