@@ -40,10 +40,22 @@ console.log(incremento)
 console.log(decremento)
 
 // 3. Imprime 5 comparaciones verdaderas con diferentes operadores de comparación
-
+console.log("Comparaciones verdaderas:")
+console.log(50 > 10)
+console.log(50 < 100)
+console.log(50 >= 50)
+console.log(50 <= 50)
+console.log(50 == "50")
+console.log(50 === 50)
 
 // 4. Imprime 5 comparaciones falsas con diferentes operadores de comparación
-
+console.log("Comparaciones falsas:")
+console.log(0 > 1)
+console.log(3 < 3)
+console.log(10 >= 12)
+console.log(50 <= 9)
+console.log(50 == 9)
+console.log(50 === "50")
 
 // 5. Utiliza el operador lógico and
 
