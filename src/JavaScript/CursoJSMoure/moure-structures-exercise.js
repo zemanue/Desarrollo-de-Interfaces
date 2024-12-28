@@ -1,9 +1,16 @@
 
 // 1. Crea un array que almacene cinco animales
+let animalesArray = ["gato", "perro", "ratón", "araña", "loro"]
+console.log("Array de animales: " + animalesArray)
 
 // 2. Añade dos más. Uno al principio y otro al final
+animalesArray.unshift("caballo")
+animalesArray.push("cangrejo")
+console.log("Dos elementos añadidos. Resultado: " + animalesArray)
 
 // 3. Elimina el que se encuentra en tercera posición
+console.log("Elemento eliminado: " + animalesArray.splice(2, 1))
+console.log("Resultado: " + animalesArray)
 
 // 4. Crea un set que almacene cinco libros
 
