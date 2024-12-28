@@ -34,10 +34,10 @@ let presentacionSinEspacios = presentacion.replaceAll(" ", "-")
 console.log(presentacionSinEspacios)
 
 // 8. Comprueba si una cadena de texto contiene una palabra concreta
-
+console.log("¿La presentación contiene la palabra 'Manu'?: " + presentacion.includes("Manu"))
 
 // 9. Comprueba si dos strings son iguales
-
+console.log("¿'presentacion' y 'presentacionSinEspacios' son iguales?: " + (presentacion === presentacionSinEspacios))
 
 // 10. Comprueba si dos strings tienen la misma longitud
-
+console.log("¿'presentacion' y 'presentacionSinEspacios' tienen la misma longitud?: " + (presentacion.length === presentacionSinEspacios.length))
