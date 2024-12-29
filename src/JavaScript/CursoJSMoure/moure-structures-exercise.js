@@ -29,9 +29,59 @@ console.log("Un elemento eliminado. Resultado: ")
 console.log(librosSet)
 
 // 7. Crea un mapa que asocie el número del mes a su nombre
+let mesesMap = new Map([
+    [1, "Enero"],
+    [2, "Febrero"],
+    [3, "Marzo"],
+    [4, "Abril"],
+    [5, "Mayo"],
+    [6, "Junio"],
+    [7, "Julio"],
+    [8, "Agosto"],
+    [9, "Septiembre"],
+    [10, "Octubre"],
+    [11, "Noviembre"],
+    [12, "Diciembre"]
+])
+console.log("Map de meses: ")
+for (const [numero, mes] of mesesMap) {
+    console.log(numero + ": " + mes)
+}
 
 // 8. Comprueba si el mes número 5 existe en el map e imprime su valor
+let numeroMes = 5
+if (mesesMap.has(numeroMes)) {
+    console.log(`El mes número ${numeroMes} es ${mesesMap.get(numeroMes)}`)
+} else {
+    console.log(`El mes número ${numeroMes} no existe en el map`)
+}
 
 // 9. Añade al mapa una clave con un array que almacene los meses de verano
+mesesMap.set("Invierno", ["Diciembre", "Enero", "Febrero"])
+mesesMap.set("Primavera", ["Marzo", "Abril", "Mayo"])
+mesesMap.set("Verano", ["Junio", "Julio", "Agosto"])
+mesesMap.set("Otoño", ["Septiembre", "Octubre", "Noviembre"]) 
+console.log("Estaciones con sus meses añadidas al map: ")
+for (const [clave, valor] of mesesMap) {
+    if (typeof clave !== "number") {
+        console.log(clave + ": " + valor)
+    }
+}
 
 // 10. Crea un Array, transfórmalo a un Set y almacénalo en un Map
+let nombresArray = ["Manu", "Isa", "Raúl", "Dani", "Sara", "Alejandro", "Raúl"]
+console.log("Array de nombres: " + nombresArray)
+
+let nombresSet = new Set(nombresArray)
+console.log("Conversión a set de nombres: ")
+console.log(nombresSet)
+
+let nombresMap = new Map()
+let index = 1
+for (const nombre of nombresSet) {
+    nombresMap.set(index++, nombre)
+}
+console.log("Conversión a map de nombres: ")
+for (const [clave, nombre] of nombresMap) {
+    console.log(clave + ": " + nombre)
+}
