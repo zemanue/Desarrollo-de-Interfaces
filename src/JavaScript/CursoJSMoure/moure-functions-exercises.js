@@ -1,10 +1,20 @@
 // NOTA: Explora diferentes sintaxis de funciones para resolver los ejercicios
 
 // 1. Crea una función que reciba dos números y devuelva su suma
+function sumarDosNumeros(a, b) {
+    return a + b
+}
 
+let a = 5, b = 3
+console.log(`Suma de ${a} + ${b} = ${sumarDosNumeros(a, b)}`)
 
 // 2. Crea una función que reciba un array de números y devuelva el mayor de ellos
+function mayorNumeroDeArray(arrayDeNumeros) {
+    return Math.max(...arrayDeNumeros)
+}
 
+arrayDeNumeros = [12, 53, 71, 1, 32, 83, 23, 88, 44, 8]
+console.log("Mayor número del array: " + mayorNumeroDeArray(arrayDeNumeros))
 
 // 3. Crea una función que reciba un string y devuelva el número de vocales que contiene
 
