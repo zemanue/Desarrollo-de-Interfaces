@@ -90,10 +90,21 @@ let sumaDePares = (arrayNum) => {
 console.log("La suma de los números pares del 1 al 10 es: " + sumaDePares([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
 
 // 8. Crea una función que reciba un array de números y devuelva un nuevo array con cada número elevado al cuadrado
-
+let elevarAlCuadrado = arrayNum => arrayNum.map(num => num ** 2)
+console.log("Array de números del 1 al 10 al cuadrado: " + elevarAlCuadrado([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
 
 // 9. Crea una función que reciba una cadena de texto y devuelva la misma cadena con las palabras en orden inverso
-
+let invertirTexto = (texto) => texto.split(" ").reverse().join(" ") //split() separa el texto en palabras, 
+                                                                    // reverse() invierte el orden de las palabras 
+                                                                    // y join() las vuelve a unir
+console.log("Texto invertido: " + invertirTexto("Hola Mundo soy Manu"))
 
 // 10. Crea una función que calcule el factorial de un número dado
-
+let factorial = (num) => {
+    let factorial = 1
+    for (let i = 1; i <= num; i++) {
+        factorial *= i
+    }
+    return factorial
+}
+console.log("Factorial de 5: " + factorial(5))
