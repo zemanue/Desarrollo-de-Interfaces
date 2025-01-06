@@ -59,10 +59,35 @@ console.log(`El número ${numero} es primo: ${esPrimo(numero)}`)
 
 
 // 6. Crea una función que reciba dos arrays y devuelva un nuevo array que contenga los elementos comunes entre ambos
+function elementosComunesEntreArrays(array1, array2) {
+    let arrayElementosComunes = []
+    array1.forEach(element1 => {
+        array2.forEach(element2 => {
+            if (element1 === element2) {
+                arrayElementosComunes.push(element1)
+            }
+        });
+    });
+    return arrayElementosComunes
+}
 
+array1 = [12, 53, 71, 1, 32, 83, 23, 88, 44, 8]
+array2 = [1, 7, 21, 32, 88, 4, 10, 9, 4, 54, 10, 12]
+array3 = elementosComunesEntreArrays(array1, array2)
+console.log(array3)
 
 // 7. Crea una función que reciba un array de números y devuelva la suma de todos los números pares
+let sumaDePares = (arrayNum) => {
+    let sumaDePares = 0
+    for (const num of arrayNum) {
+        if (num % 2 == 0) {
+            sumaDePares += num
+        }
+    }
+    return sumaDePares
+}
 
+console.log(sumaDePares([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
 
 // 8. Crea una función que reciba un array de números y devuelva un nuevo array con cada número elevado al cuadrado
 
