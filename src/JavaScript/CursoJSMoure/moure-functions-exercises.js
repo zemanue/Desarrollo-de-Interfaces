@@ -55,7 +55,7 @@ let esPrimo = (number) => {
 }
 
 let numero = 97
-console.log(`El número ${numero} es primo: ${esPrimo(numero)}`)
+console.log(`¿El número ${numero} es primo? ${esPrimo(numero)}`)
 
 
 // 6. Crea una función que reciba dos arrays y devuelva un nuevo array que contenga los elementos comunes entre ambos
@@ -74,7 +74,7 @@ function elementosComunesEntreArrays(array1, array2) {
 array1 = [12, 53, 71, 1, 32, 83, 23, 88, 44, 8]
 array2 = [1, 7, 21, 32, 88, 4, 10, 9, 4, 54, 10, 12]
 array3 = elementosComunesEntreArrays(array1, array2)
-console.log(array3)
+console.log("Los elementos comunes entre array1 y array2 son: " + array3)
 
 // 7. Crea una función que reciba un array de números y devuelva la suma de todos los números pares
 let sumaDePares = (arrayNum) => {
@@ -87,7 +87,7 @@ let sumaDePares = (arrayNum) => {
     return sumaDePares
 }
 
-console.log(sumaDePares([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
+console.log("La suma de los números pares del 1 al 10 es: " + sumaDePares([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
 
 // 8. Crea una función que reciba un array de números y devuelva un nuevo array con cada número elevado al cuadrado
 
