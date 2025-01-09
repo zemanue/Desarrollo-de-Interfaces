@@ -24,7 +24,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function añadirTexto(etiqueta, texto) {
         let elemento = document.createElement(etiqueta)
-        elemento.textContent = texto
+        let textoNodo = document.createTextNode(texto)
+        elemento.appendChild(textoNodo)
         document.body.appendChild(elemento)
     }
 
@@ -36,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function añadirImagenes(imagenes = []) {
         imagenes.forEach(imagen => {
             let img = document.createElement("img")
-            img.src = imagen
+            img.setAttribute("src", imagen)
             document.body.appendChild(img)
         })
     }
