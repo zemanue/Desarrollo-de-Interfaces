@@ -11,7 +11,7 @@
             • Montaña: Aparece un párrafo (lorem). Dos fotos 
         - Si elige Portugal Preguntamos: ¿Turismo, playa o montaña? 
             • Turismo: Texto y una foto (Lisboa) 
-            • Playa: Algarbe (texto y dos fotos) 
+            • Playa: Algarve (texto y dos fotos) 
             • Montaña: Fotos de Nazaret y santuario Fátima
 */
 document.addEventListener('DOMContentLoaded', function () {
@@ -238,6 +238,97 @@ document.addEventListener('DOMContentLoaded', function () {
                 let imgMontaña2 = document.createElement("img")
                 imgMontaña2.src = "Montaña-cazorla.jpg"
                 document.body.appendChild(imgMontaña2)
+            })
+        })
+
+        // Para el boton de Portugal
+        botonPortugal.addEventListener("click", function () {
+            document.body.innerHTML = ""
+
+            // Pregunta por preferencia
+            let preguntaDestinoPor = document.createElement("h1")
+            preguntaDestinoPor.textContent = "Elige: ¿Turismo, playa o montaña?"
+            document.body.appendChild(preguntaDestinoPor)
+
+            // Botones turismo / playa / montaña
+            let botonTurismo = document.createElement("button")
+            botonTurismo.textContent = "Turismo"
+            document.body.appendChild(botonTurismo)
+
+            let botonPlayaPor = document.createElement("button")
+            botonPlayaPor.textContent = "Playa"
+            document.body.appendChild(botonPlayaPor)
+
+            let botonMontañaPor = document.createElement("button")
+            botonMontañaPor.textContent = "Montaña"
+            document.body.appendChild(botonMontañaPor)
+
+            // TURISMO
+            botonTurismo.addEventListener("click", function () {
+                document.body.innerHTML = ""
+
+                // Título turismo
+                let tituloTurismo = document.createElement("h1")
+                tituloTurismo.textContent = "TURISMO: LISBOA"
+                document.body.appendChild(tituloTurismo)
+
+                // Párrafo lorem ipsum
+                let parrafoTurismo = document.createElement("p")
+                parrafoTurismo.textContent = loremIpsum
+                document.body.appendChild(parrafoTurismo)
+
+                // Imágenes de turismo
+                let imgTurismo = document.createElement("img")
+                imgTurismo.src = "Turismo-lisboa.jpg"
+                document.body.appendChild(imgTurismo)
+            })
+
+            // PLAYA
+            botonPlayaPor.addEventListener("click", function () {
+                document.body.innerHTML = ""
+
+                // Título playa
+                let tituloPlayaPor = document.createElement("h1")
+                tituloPlayaPor.textContent = "PLAYA: ALGARVE"
+                document.body.appendChild(tituloPlayaPor)
+
+                // Párrafo lorem ipsum
+                let parrafoPlayaPor = document.createElement("p")
+                parrafoPlayaPor.textContent = loremIpsum
+                document.body.appendChild(parrafoPlayaPor)
+
+                // Imágenes de playa
+                let imgPlayaPor1 = document.createElement("img")
+                imgPlayaPor1.src = "Playa-algarve.jpg"
+                document.body.appendChild(imgPlayaPor1)
+
+                let imgPlayaPor2 = document.createElement("img")
+                imgPlayaPor2.src = "Playa-algarve2.jpg"
+                document.body.appendChild(imgPlayaPor2)
+            })
+
+            // MONTAÑA
+            botonMontañaPor.addEventListener("click", function () {
+                document.body.innerHTML = ""
+
+                // Título montaña
+                let tituloMontañaPor = document.createElement("h1")
+                tituloMontañaPor.textContent = "MONTAÑA: NAZARET Y SANTUARIO FÁTIMA"
+                document.body.appendChild(tituloMontañaPor)
+
+                // Párrafo lorem ipsum
+                let parrafoMontañaPor = document.createElement("p")
+                parrafoMontañaPor.textContent = loremIpsum
+                document.body.appendChild(parrafoMontañaPor)
+
+                // Imágenes de montaña
+                let imgMontañaPor1 = document.createElement("img")
+                imgMontañaPor1.src = "Montaña-nazare.jpg"
+                document.body.appendChild(imgMontañaPor1)
+
+                let imgMontañaPor2 = document.createElement("img")
+                imgMontañaPor2.src = "Montaña-fatima.jpg"
+                document.body.appendChild(imgMontañaPor2)
             })
         })
     })
