@@ -41,8 +41,14 @@ document.addEventListener('DOMContentLoaded', function () {
         })
     }
 
+    // Pregunta inicial
+    añadirTexto("h1", "¿Deseas jugar con Javascript?")
+    let botonSi = document.createElement("button")
+    añadirBoton(botonSi, "SI")
+    let botonNo = document.createElement("button")
+    añadirBoton(botonNo, "NO")
+
     // Para el boton de NO
-    let botonNo = document.getElementById("botonNo")
     botonNo.addEventListener("click", function () {
         limpiarBody()
 
@@ -52,7 +58,6 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 
     // Para el boton de SI
-    let botonSi = document.getElementById("botonSi")
     botonSi.addEventListener("click", function () {
         limpiarBody()
 
