@@ -22,6 +22,17 @@ document.addEventListener('DOMContentLoaded', function () {
         document.body.innerHTML = ""
     }
 
+    function añadirTexto(etiqueta, texto) {
+        let elemento = document.createElement(etiqueta)
+        elemento.textContent = texto
+        document.body.appendChild(elemento)
+    }
+
+    function añadirBoton(boton, texto) {
+        boton.textContent = texto
+        document.body.appendChild(boton)
+    }
+
     function añadirImagenes(imagenes = []) {
         imagenes.forEach(imagen => {
             let img = document.createElement("img")
@@ -35,17 +46,9 @@ document.addEventListener('DOMContentLoaded', function () {
     botonNo.addEventListener("click", function () {
         limpiarBody()
 
-        // Mensaje de "tu te lo pierdes"
-        let tuTeLoPierdes = document.createElement("h1")
-        tuTeLoPierdes.textContent = "Tu te lo pierdes!!!"
-        document.body.appendChild(tuTeLoPierdes)
-
+        añadirTexto("h1", "Tu te lo pierdes!!!")
         añadirImagenes(["gato-enojado.gif"])
-
-        // Mensaje de "Recarga para volver a jugar"
-        let recarga = document.createElement("h4")
-        recarga.textContent = "Cuando quieras jugar, recarga la página..."
-        document.body.appendChild(recarga)
+        añadirTexto("h4", "Cuando quieras jugar, recarga la página...")
     })
 
     // Para el boton de SI
@@ -53,61 +56,40 @@ document.addEventListener('DOMContentLoaded', function () {
     botonSi.addEventListener("click", function () {
         limpiarBody()
 
-        // Pregunta por el destino
-        let preguntaDestino = document.createElement("h1")
-        preguntaDestino.textContent = "Elige un destino: ¿Francia, España o Portugal?"
-        document.body.appendChild(preguntaDestino)
+        añadirTexto("h1", "Elige un destino: ¿Francia, España o Portugal?")
 
         // Botones de los destinos
         let botonFrancia = document.createElement("button")
-        botonFrancia.textContent = "Francia"
-        document.body.appendChild(botonFrancia)
+        añadirBoton(botonFrancia, "Francia")
 
         let botonEspaña = document.createElement("button")
-        botonEspaña.textContent = "España"
-        document.body.appendChild(botonEspaña)
+        añadirBoton(botonEspaña, "España")
 
         let botonPortugal = document.createElement("button")
-        botonPortugal.textContent = "Portugal"
-        document.body.appendChild(botonPortugal)
+        añadirBoton(botonPortugal, "Portugal")
 
         // Para el boton de Francia
         botonFrancia.addEventListener("click", function () {
             limpiarBody()
 
-            // Pregunta por la ciudad
-            let preguntaDestinoFr = document.createElement("h1")
-            preguntaDestinoFr.textContent = "Elige un destino: ¿París, Marsella o Lyon?"
-            document.body.appendChild(preguntaDestinoFr)
+            añadirTexto("h1", "Elige un destino: ¿París, Marsella o Lyon?")
 
             // Botones de las ciudades
             let botonParis = document.createElement("button")
-            botonParis.textContent = "París"
-            document.body.appendChild(botonParis)
+            añadirBoton(botonParis, "París")
 
             let botonMarsella = document.createElement("button")
-            botonMarsella.textContent = "Marsella"
-            document.body.appendChild(botonMarsella)
+            añadirBoton(botonMarsella, "Marsella")
 
             let botonLyon = document.createElement("button")
-            botonLyon.textContent = "Lyon"
-            document.body.appendChild(botonLyon)
+            añadirBoton(botonLyon, "Lyon")
 
             // Para el botón de París
             botonParis.addEventListener("click", function () {
                 limpiarBody()
 
-                // Título París
-                let tituloParis = document.createElement("h1")
-                tituloParis.textContent = "PARÍS"
-                document.body.appendChild(tituloParis)
-
-                // Párrafo lorem ipsum
-                let parrafoParis = document.createElement("p")
-                parrafoParis.textContent = loremIpsum
-                document.body.appendChild(parrafoParis)
-
-                // Imágenes de París
+                añadirTexto("h1", "PARÍS")
+                añadirTexto("p", loremIpsum)
                 añadirImagenes(["Paris-altura-torre-eiffel.jpg", "Paris-notre-dame.jpg", "Paris-louvre.jpg"])
             })
 
@@ -115,17 +97,8 @@ document.addEventListener('DOMContentLoaded', function () {
             botonMarsella.addEventListener("click", function () {
                 limpiarBody()
 
-                // Título Marsella
-                let tituloMarsella = document.createElement("h1")
-                tituloMarsella.textContent = "MARSELLA"
-                document.body.appendChild(tituloMarsella)
-
-                // Párrafo lorem ipsum
-                let parrafoMarsella = document.createElement("p")
-                parrafoMarsella.textContent = loremIpsum
-                document.body.appendChild(parrafoMarsella)
-
-                // Imágenes de Marsella
+                añadirTexto("h1", "MARSELLA")
+                añadirTexto("p", loremIpsum)
                 añadirImagenes(["Marsella-puerto.jpg", "Marsella-puerto2.jpg", "Marsella-notre-dame-de-la-garde.jpg"])
             })
 
@@ -133,17 +106,8 @@ document.addEventListener('DOMContentLoaded', function () {
             botonLyon.addEventListener("click", function () {
                 limpiarBody()
 
-                // Título Lyon
-                let tituloLyon = document.createElement("h1")
-                tituloLyon.textContent = "LYON"
-                document.body.appendChild(tituloLyon)
-
-                // Párrafo lorem ipsum
-                let parrafoLyon = document.createElement("p")
-                parrafoLyon.textContent = loremIpsum
-                document.body.appendChild(parrafoLyon)
-
-                // Imágenes de París
+                añadirTexto("h1", "LYON")
+                añadirTexto("p", loremIpsum)
                 añadirImagenes(["Lyon-aereo.jpg", "Lyon-saint-georges.jpg", "Lyon-louis-xiv.jpg"])
             })
         })
@@ -153,34 +117,21 @@ document.addEventListener('DOMContentLoaded', function () {
             limpiarBody()
 
             // Pregunta por preferencia
-            let preguntaDestinoEsp = document.createElement("h1")
-            preguntaDestinoEsp.textContent = "Elige: ¿Playa o montaña?"
-            document.body.appendChild(preguntaDestinoEsp)
+            añadirTexto("h1", "Elige: ¿Playa o montaña?")
 
             // Botones playa / montaña
             let botonPlaya = document.createElement("button")
-            botonPlaya.textContent = "Playa"
-            document.body.appendChild(botonPlaya)
+            añadirBoton(botonPlaya, "Playa")
 
             let botonMontaña = document.createElement("button")
-            botonMontaña.textContent = "Montaña"
-            document.body.appendChild(botonMontaña)
+            añadirBoton(botonMontaña, "Montaña")
 
             // PLAYA
             botonPlaya.addEventListener("click", function () {
                 limpiarBody()
 
-                // Título playa
-                let tituloPlaya = document.createElement("h1")
-                tituloPlaya.textContent = "PLAYA"
-                document.body.appendChild(tituloPlaya)
-
-                // Párrafo lorem ipsum
-                let parrafoPlaya = document.createElement("p")
-                parrafoPlaya.textContent = loremIpsum
-                document.body.appendChild(parrafoPlaya)
-
-                // Imágenes de playa
+                añadirTexto("h1", "PLAYA")
+                añadirTexto("p", loremIpsum)
                 añadirImagenes(["Playa-malaga.jpg", "Playa-benidorm.jpg", "Playa-asturias.jpg"])
             })
 
@@ -188,17 +139,8 @@ document.addEventListener('DOMContentLoaded', function () {
             botonMontaña.addEventListener("click", function () {
                 limpiarBody()
 
-                // Título montaña
-                let tituloMontaña = document.createElement("h1")
-                tituloMontaña.textContent = "MONTAÑA"
-                document.body.appendChild(tituloMontaña)
-
-                // Párrafo lorem ipsum
-                let parrafoMontaña = document.createElement("p")
-                parrafoMontaña.textContent = loremIpsum
-                document.body.appendChild(parrafoMontaña)
-
-                // Imágenes de montaña
+                añadirTexto("h1", "MONTAÑA")
+                añadirTexto("p", loremIpsum)
                 añadirImagenes(["Montaña-pirineos.jpg", "Montaña-cazorla.jpg"])
             })
         })
@@ -208,38 +150,24 @@ document.addEventListener('DOMContentLoaded', function () {
             limpiarBody()
 
             // Pregunta por preferencia
-            let preguntaDestinoPor = document.createElement("h1")
-            preguntaDestinoPor.textContent = "Elige: ¿Turismo, playa o montaña?"
-            document.body.appendChild(preguntaDestinoPor)
+            añadirTexto("h1", "Elige: ¿Turismo, playa o montaña?")
 
             // Botones turismo / playa / montaña
             let botonTurismo = document.createElement("button")
-            botonTurismo.textContent = "Turismo"
-            document.body.appendChild(botonTurismo)
+            añadirBoton(botonTurismo, "Turismo")
 
             let botonPlayaPor = document.createElement("button")
-            botonPlayaPor.textContent = "Playa"
-            document.body.appendChild(botonPlayaPor)
+            añadirBoton(botonPlayaPor, "Playa")
 
             let botonMontañaPor = document.createElement("button")
-            botonMontañaPor.textContent = "Montaña"
-            document.body.appendChild(botonMontañaPor)
+            añadirBoton(botonMontañaPor, "Montaña")
 
             // TURISMO
             botonTurismo.addEventListener("click", function () {
                 limpiarBody()
 
-                // Título turismo
-                let tituloTurismo = document.createElement("h1")
-                tituloTurismo.textContent = "TURISMO: LISBOA"
-                document.body.appendChild(tituloTurismo)
-
-                // Párrafo lorem ipsum
-                let parrafoTurismo = document.createElement("p")
-                parrafoTurismo.textContent = loremIpsum
-                document.body.appendChild(parrafoTurismo)
-
-                // Imágenes de turismo
+                añadirTexto("h1", "TURISMO: LISBOA")
+                añadirTexto("p", loremIpsum)
                 añadirImagenes(["Turismo-lisboa.jpg"])
             })
 
@@ -247,17 +175,8 @@ document.addEventListener('DOMContentLoaded', function () {
             botonPlayaPor.addEventListener("click", function () {
                 limpiarBody()
 
-                // Título playa
-                let tituloPlayaPor = document.createElement("h1")
-                tituloPlayaPor.textContent = "PLAYA: ALGARVE"
-                document.body.appendChild(tituloPlayaPor)
-
-                // Párrafo lorem ipsum
-                let parrafoPlayaPor = document.createElement("p")
-                parrafoPlayaPor.textContent = loremIpsum
-                document.body.appendChild(parrafoPlayaPor)
-
-                // Imágenes de playa
+                añadirTexto("h1", "PLAYA: ALGARVE")
+                añadirTexto("p", loremIpsum)
                 añadirImagenes(["Playa-algarve.jpg", "Playa-algarve2.jpg"])
             })
 
@@ -265,17 +184,8 @@ document.addEventListener('DOMContentLoaded', function () {
             botonMontañaPor.addEventListener("click", function () {
                 limpiarBody()
 
-                // Título montaña
-                let tituloMontañaPor = document.createElement("h1")
-                tituloMontañaPor.textContent = "MONTAÑA: NAZARET Y SANTUARIO FÁTIMA"
-                document.body.appendChild(tituloMontañaPor)
-
-                // Párrafo lorem ipsum
-                let parrafoMontañaPor = document.createElement("p")
-                parrafoMontañaPor.textContent = loremIpsum
-                document.body.appendChild(parrafoMontañaPor)
-
-                // Imágenes de montaña
+                añadirTexto("h1", "MONTAÑA: NAZARET Y SANTUARIO FÁTIMA")
+                añadirTexto("p", loremIpsum)
                 añadirImagenes(["Montaña-nazare.jpg", "Montaña-fatima.jpg"])
             })
         })
