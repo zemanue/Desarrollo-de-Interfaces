@@ -61,6 +61,8 @@ document.addEventListener('DOMContentLoaded', function () {
         botonPortugal.textContent = "Portugal"
         document.body.appendChild(botonPortugal)
 
+        let loremIpsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean arcu dolor, pharetra vel porttitor sed, aliquam vel nisi. Ut nec consectetur nisi. Pellentesque rhoncus metus a metus tempus faucibus. Proin tempor elit elementum dolor congue eleifend. Aliquam euismod orci in metus ultrices tristique. Cras commodo, felis convallis congue blandit, ligula neque rhoncus sem, gravida commodo neque lorem ut neque. Quisque sodales diam sed leo porttitor, dictum interdum nibh pellentesque."
+
         // Para el boton de Francia
         botonFrancia.addEventListener("click", function () {
             document.body.innerHTML = ""
@@ -94,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 // Párrafo lorem ipsum
                 let parrafoParis = document.createElement("p")
-                parrafoParis.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean arcu dolor, pharetra vel porttitor sed, aliquam vel nisi. Ut nec consectetur nisi. Pellentesque rhoncus metus a metus tempus faucibus. Proin tempor elit elementum dolor congue eleifend. Aliquam euismod orci in metus ultrices tristique. Cras commodo, felis convallis congue blandit, ligula neque rhoncus sem, gravida commodo neque lorem ut neque. Quisque sodales diam sed leo porttitor, dictum interdum nibh pellentesque."
+                parrafoParis.textContent = loremIpsum
                 document.body.appendChild(parrafoParis)
 
                 // Imágenes de París
@@ -122,7 +124,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 // Párrafo lorem ipsum
                 let parrafoMarsella = document.createElement("p")
-                parrafoMarsella.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean arcu dolor, pharetra vel porttitor sed, aliquam vel nisi. Ut nec consectetur nisi. Pellentesque rhoncus metus a metus tempus faucibus. Proin tempor elit elementum dolor congue eleifend. Aliquam euismod orci in metus ultrices tristique. Cras commodo, felis convallis congue blandit, ligula neque rhoncus sem, gravida commodo neque lorem ut neque. Quisque sodales diam sed leo porttitor, dictum interdum nibh pellentesque."
+                parrafoMarsella.textContent = loremIpsum
                 document.body.appendChild(parrafoMarsella)
 
                 // Imágenes de Marsella
@@ -150,7 +152,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 // Párrafo lorem ipsum
                 let parrafoLyon = document.createElement("p")
-                parrafoLyon.textContent = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean arcu dolor, pharetra vel porttitor sed, aliquam vel nisi. Ut nec consectetur nisi. Pellentesque rhoncus metus a metus tempus faucibus. Proin tempor elit elementum dolor congue eleifend. Aliquam euismod orci in metus ultrices tristique. Cras commodo, felis convallis congue blandit, ligula neque rhoncus sem, gravida commodo neque lorem ut neque. Quisque sodales diam sed leo porttitor, dictum interdum nibh pellentesque."
+                parrafoLyon.textContent = loremIpsum
                 document.body.appendChild(parrafoLyon)
 
                 // Imágenes de París
@@ -165,6 +167,77 @@ document.addEventListener('DOMContentLoaded', function () {
                 let imgLyon3 = document.createElement("img")
                 imgLyon3.src = "Lyon-louis-xiv.jpg"
                 document.body.appendChild(imgLyon3)
+            })
+        })
+
+        // Para el boton de España
+        botonEspaña.addEventListener("click", function () {
+            document.body.innerHTML = ""
+
+            // Pregunta por preferencia
+            let preguntaDestinoEsp = document.createElement("h1")
+            preguntaDestinoEsp.textContent = "Elige: ¿Playa o montaña?"
+            document.body.appendChild(preguntaDestinoEsp)
+
+            // Botones playa / montaña
+            let botonPlaya = document.createElement("button")
+            botonPlaya.textContent = "Playa"
+            document.body.appendChild(botonPlaya)
+
+            let botonMontaña = document.createElement("button")
+            botonMontaña.textContent = "Montaña"
+            document.body.appendChild(botonMontaña)
+
+            // PLAYA
+            botonPlaya.addEventListener("click", function () {
+                document.body.innerHTML = ""
+
+                // Título playa
+                let tituloPlaya = document.createElement("h1")
+                tituloPlaya.textContent = "PLAYA"
+                document.body.appendChild(tituloPlaya)
+
+                // Párrafo lorem ipsum
+                let parrafoPlaya = document.createElement("p")
+                parrafoPlaya.textContent = loremIpsum
+                document.body.appendChild(parrafoPlaya)
+
+                // Imágenes de playa
+                let imgPlaya1 = document.createElement("img")
+                imgPlaya1.src = "Playa-malaga.jpg"
+                document.body.appendChild(imgPlaya1)
+
+                let imgPlaya2 = document.createElement("img")
+                imgPlaya2.src = "Playa-benidorm.jpg"
+                document.body.appendChild(imgPlaya2)
+
+                let imgPlaya3 = document.createElement("img")
+                imgPlaya3.src = "Playa-asturias.jpg"
+                document.body.appendChild(imgPlaya3)
+            })
+
+            // MONTAÑA
+            botonMontaña.addEventListener("click", function () {
+                document.body.innerHTML = ""
+
+                // Título montaña
+                let tituloMontaña = document.createElement("h1")
+                tituloMontaña.textContent = "MONTAÑA"
+                document.body.appendChild(tituloMontaña)
+
+                // Párrafo lorem ipsum
+                let parrafoMontaña = document.createElement("p")
+                parrafoMontaña.textContent = loremIpsum
+                document.body.appendChild(parrafoMontaña)
+
+                // Imágenes de montaña
+                let imgMontaña1 = document.createElement("img")
+                imgMontaña1.src = "Montaña-pirineos.jpg"
+                document.body.appendChild(imgMontaña1)
+
+                let imgMontaña2 = document.createElement("img")
+                imgMontaña2.src = "Montaña-cazorla.jpg"
+                document.body.appendChild(imgMontaña2)
             })
         })
     })
