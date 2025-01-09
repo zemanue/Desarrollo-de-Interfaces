@@ -10,7 +10,8 @@ body {
 div {
     width: 95%;
     display: flex;
-    margin-top: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     margin-left: 2.5%;
     margin-right: 2.5%;
 }
@@ -27,4 +28,10 @@ img {
     display: block;
     margin: 0 auto;
     border: 20px solid white;
+}
+
+button {
+    text-align: center;
+    width: 25%;
+    height: 30px;
 }
