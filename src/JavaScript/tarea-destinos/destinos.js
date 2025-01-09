@@ -16,21 +16,31 @@
 */
 document.addEventListener('DOMContentLoaded', function () {
 
+    const loremIpsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean arcu dolor, pharetra vel porttitor sed, aliquam vel nisi. Ut nec consectetur nisi. Pellentesque rhoncus metus a metus tempus faucibus. Proin tempor elit elementum dolor congue eleifend. Aliquam euismod orci in metus ultrices tristique. Cras commodo, felis convallis congue blandit, ligula neque rhoncus sem, gravida commodo neque lorem ut neque. Quisque sodales diam sed leo porttitor, dictum interdum nibh pellentesque."
+
+    function limpiarBody() {
+        document.body.innerHTML = ""
+    }
+
+    function añadirImagenes(imagenes = []) {
+        imagenes.forEach(imagen => {
+            let img = document.createElement("img")
+            img.src = imagen
+            document.body.appendChild(img)
+        })
+    }
+
     // Para el boton de NO
     let botonNo = document.getElementById("botonNo")
     botonNo.addEventListener("click", function () {
-        // Eliminar todos los elementos del body
-        document.body.innerHTML = ""
+        limpiarBody()
 
         // Mensaje de "tu te lo pierdes"
         let tuTeLoPierdes = document.createElement("h1")
         tuTeLoPierdes.textContent = "Tu te lo pierdes!!!"
         document.body.appendChild(tuTeLoPierdes)
 
-        // Imagen de gato enojado
-        let imagenBotonNo = document.createElement("img")
-        imagenBotonNo.src = "gato-enojado.gif"
-        document.body.appendChild(imagenBotonNo)
+        añadirImagenes(["gato-enojado.gif"])
 
         // Mensaje de "Recarga para volver a jugar"
         let recarga = document.createElement("h4")
@@ -41,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Para el boton de SI
     let botonSi = document.getElementById("botonSi")
     botonSi.addEventListener("click", function () {
-        document.body.innerHTML = ""
+        limpiarBody()
 
         // Pregunta por el destino
         let preguntaDestino = document.createElement("h1")
@@ -61,11 +71,9 @@ document.addEventListener('DOMContentLoaded', function () {
         botonPortugal.textContent = "Portugal"
         document.body.appendChild(botonPortugal)
 
-        let loremIpsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean arcu dolor, pharetra vel porttitor sed, aliquam vel nisi. Ut nec consectetur nisi. Pellentesque rhoncus metus a metus tempus faucibus. Proin tempor elit elementum dolor congue eleifend. Aliquam euismod orci in metus ultrices tristique. Cras commodo, felis convallis congue blandit, ligula neque rhoncus sem, gravida commodo neque lorem ut neque. Quisque sodales diam sed leo porttitor, dictum interdum nibh pellentesque."
-
         // Para el boton de Francia
         botonFrancia.addEventListener("click", function () {
-            document.body.innerHTML = ""
+            limpiarBody()
 
             // Pregunta por la ciudad
             let preguntaDestinoFr = document.createElement("h1")
@@ -87,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Para el botón de París
             botonParis.addEventListener("click", function () {
-                document.body.innerHTML = ""
+                limpiarBody()
 
                 // Título París
                 let tituloParis = document.createElement("h1")
@@ -100,22 +108,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.body.appendChild(parrafoParis)
 
                 // Imágenes de París
-                let imgParis1 = document.createElement("img")
-                imgParis1.src = "Paris-altura-torre-eiffel.jpg"
-                document.body.appendChild(imgParis1)
-
-                let imgParis2 = document.createElement("img")
-                imgParis2.src = "Paris-notre-dame.jpg"
-                document.body.appendChild(imgParis2)
-
-                let imgParis3 = document.createElement("img")
-                imgParis3.src = "Paris-louvre.jpg"
-                document.body.appendChild(imgParis3)
+                añadirImagenes(["Paris-altura-torre-eiffel.jpg", "Paris-notre-dame.jpg", "Paris-louvre.jpg"])
             })
 
             // Para el botón de Marsella
             botonMarsella.addEventListener("click", function () {
-                document.body.innerHTML = ""
+                limpiarBody()
 
                 // Título Marsella
                 let tituloMarsella = document.createElement("h1")
@@ -128,22 +126,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.body.appendChild(parrafoMarsella)
 
                 // Imágenes de Marsella
-                let imgMarsella1 = document.createElement("img")
-                imgMarsella1.src = "Marsella-puerto.jpg"
-                document.body.appendChild(imgMarsella1)
-
-                let imgMarsella2 = document.createElement("img")
-                imgMarsella2.src = "Marsella-puerto2.jpg"
-                document.body.appendChild(imgMarsella2)
-
-                let imgMarsella3 = document.createElement("img")
-                imgMarsella3.src = "Marsella-notre-dame-de-la-garde.jpg"
-                document.body.appendChild(imgMarsella3)
+                añadirImagenes(["Marsella-puerto.jpg", "Marsella-puerto2.jpg", "Marsella-notre-dame-de-la-garde.jpg"])
             })
 
             // Para el botón de Lyon
             botonLyon.addEventListener("click", function () {
-                document.body.innerHTML = ""
+                limpiarBody()
 
                 // Título Lyon
                 let tituloLyon = document.createElement("h1")
@@ -156,23 +144,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.body.appendChild(parrafoLyon)
 
                 // Imágenes de París
-                let imgLyon1 = document.createElement("img")
-                imgLyon1.src = "Lyon-aereo.jpg"
-                document.body.appendChild(imgLyon1)
-
-                let imgLyon2 = document.createElement("img")
-                imgLyon2.src = "Lyon-saint-georges.jpg"
-                document.body.appendChild(imgLyon2)
-
-                let imgLyon3 = document.createElement("img")
-                imgLyon3.src = "Lyon-louis-xiv.jpg"
-                document.body.appendChild(imgLyon3)
+                añadirImagenes(["Lyon-aereo.jpg", "Lyon-saint-georges.jpg", "Lyon-louis-xiv.jpg"])
             })
         })
 
         // Para el boton de España
         botonEspaña.addEventListener("click", function () {
-            document.body.innerHTML = ""
+            limpiarBody()
 
             // Pregunta por preferencia
             let preguntaDestinoEsp = document.createElement("h1")
@@ -190,7 +168,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // PLAYA
             botonPlaya.addEventListener("click", function () {
-                document.body.innerHTML = ""
+                limpiarBody()
 
                 // Título playa
                 let tituloPlaya = document.createElement("h1")
@@ -203,22 +181,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.body.appendChild(parrafoPlaya)
 
                 // Imágenes de playa
-                let imgPlaya1 = document.createElement("img")
-                imgPlaya1.src = "Playa-malaga.jpg"
-                document.body.appendChild(imgPlaya1)
-
-                let imgPlaya2 = document.createElement("img")
-                imgPlaya2.src = "Playa-benidorm.jpg"
-                document.body.appendChild(imgPlaya2)
-
-                let imgPlaya3 = document.createElement("img")
-                imgPlaya3.src = "Playa-asturias.jpg"
-                document.body.appendChild(imgPlaya3)
+                añadirImagenes(["Playa-malaga.jpg", "Playa-benidorm.jpg", "Playa-asturias.jpg"])
             })
 
             // MONTAÑA
             botonMontaña.addEventListener("click", function () {
-                document.body.innerHTML = ""
+                limpiarBody()
 
                 // Título montaña
                 let tituloMontaña = document.createElement("h1")
@@ -231,19 +199,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.body.appendChild(parrafoMontaña)
 
                 // Imágenes de montaña
-                let imgMontaña1 = document.createElement("img")
-                imgMontaña1.src = "Montaña-pirineos.jpg"
-                document.body.appendChild(imgMontaña1)
-
-                let imgMontaña2 = document.createElement("img")
-                imgMontaña2.src = "Montaña-cazorla.jpg"
-                document.body.appendChild(imgMontaña2)
+                añadirImagenes(["Montaña-pirineos.jpg", "Montaña-cazorla.jpg"])
             })
         })
 
         // Para el boton de Portugal
         botonPortugal.addEventListener("click", function () {
-            document.body.innerHTML = ""
+            limpiarBody()
 
             // Pregunta por preferencia
             let preguntaDestinoPor = document.createElement("h1")
@@ -265,7 +227,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // TURISMO
             botonTurismo.addEventListener("click", function () {
-                document.body.innerHTML = ""
+                limpiarBody()
 
                 // Título turismo
                 let tituloTurismo = document.createElement("h1")
@@ -278,14 +240,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.body.appendChild(parrafoTurismo)
 
                 // Imágenes de turismo
-                let imgTurismo = document.createElement("img")
-                imgTurismo.src = "Turismo-lisboa.jpg"
-                document.body.appendChild(imgTurismo)
+                añadirImagenes(["Turismo-lisboa.jpg"])
             })
 
             // PLAYA
             botonPlayaPor.addEventListener("click", function () {
-                document.body.innerHTML = ""
+                limpiarBody()
 
                 // Título playa
                 let tituloPlayaPor = document.createElement("h1")
@@ -298,18 +258,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.body.appendChild(parrafoPlayaPor)
 
                 // Imágenes de playa
-                let imgPlayaPor1 = document.createElement("img")
-                imgPlayaPor1.src = "Playa-algarve.jpg"
-                document.body.appendChild(imgPlayaPor1)
-
-                let imgPlayaPor2 = document.createElement("img")
-                imgPlayaPor2.src = "Playa-algarve2.jpg"
-                document.body.appendChild(imgPlayaPor2)
+                añadirImagenes(["Playa-algarve.jpg", "Playa-algarve2.jpg"])
             })
 
             // MONTAÑA
             botonMontañaPor.addEventListener("click", function () {
-                document.body.innerHTML = ""
+                limpiarBody()
 
                 // Título montaña
                 let tituloMontañaPor = document.createElement("h1")
@@ -322,13 +276,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.body.appendChild(parrafoMontañaPor)
 
                 // Imágenes de montaña
-                let imgMontañaPor1 = document.createElement("img")
-                imgMontañaPor1.src = "Montaña-nazare.jpg"
-                document.body.appendChild(imgMontañaPor1)
-
-                let imgMontañaPor2 = document.createElement("img")
-                imgMontañaPor2.src = "Montaña-fatima.jpg"
-                document.body.appendChild(imgMontañaPor2)
+                añadirImagenes(["Montaña-nazare.jpg", "Montaña-fatima.jpg"])
             })
         })
     })
