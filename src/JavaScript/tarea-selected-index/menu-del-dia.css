@@ -6,3 +6,25 @@ body {
 #tituloOpciones {
     text-align: center;
 }
+
+div {
+    width: 95%;
+    display: flex;
+    margin-top: 30px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+select {
+    width: 45%;
+    height: 30px;
+    padding: 5px 20px;
+}
+
+img {
+    width: 45%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 20px solid white;
+}
