@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style src="menu-del-dia.css"></style>
     <link rel="stylesheet" href="menu-del-dia.css">
+    <script defer src="menu-del-dia.js"></script>
     <title>Document</title>
 </head>
 
@@ -14,30 +14,30 @@
 
     <div>
         <select name="primerPlato" id="primerPlato">
-            <option value="0">[Elegir primer plato]</option>
-            <option value="1">Salmorejo (4€)</option>
-            <option value="2">Cocido madrileño (3€)</option>
+            <option value="nada">[Elegir primer plato]</option>
+            <option value="salmorejo">Salmorejo (4€)</option>
+            <option value="cocido">Cocido madrileño (3€)</option>
         </select>
-        <img src="plato-no-seleccionado.jpg" alt="Primer plato no seleccionado">
+        <img id="imagenPrimerPlato" src="plato-no-seleccionado.jpg" alt="Primer plato no seleccionado">
     </div>
 
     <div>
         <select name="segundoPlato" id="segundoPlato">
-            <option value="0">[Elegir segundo plato]</option>
-            <option value="1">Campero de pollo asado (4€)</option>
-            <option value="2">Albóndigas con puré de patata (6€)</option>
+            <option value="nada">[Elegir segundo plato]</option>
+            <option value="campero">Campero de pollo asado (4€)</option>
+            <option value="albondigas">Albóndigas con puré de patata (6€)</option>
         </select>
-        <img src="plato-no-seleccionado.jpg" alt="Segundo plato no seleccionado">
+        <img id="imagenSegundoPlato" src="plato-no-seleccionado.jpg" alt="Segundo plato no seleccionado">
 
     </div>
 
     <div>
         <select name="postre" id="postre">
-            <option value="0">[Elegir postre]</option>
-            <option value="1">Brownie de chocolate (2.50€)</option>
-            <option value="2">Tarta de queso (4€)</option>
+            <option value="nada">[Elegir postre]</option>
+            <option value="coulant">Coulant de chocolate con helado de vanilla (2.50€)</option>
+            <option value="cheesecake">Tarta de queso (3€)</option>
         </select>
-        <img src="plato-no-seleccionado.jpg" alt="Postre no seleccionado">
+        <img id="imagenPostre" src="plato-no-seleccionado.jpg" alt="Postre no seleccionado">
     </div>
 
     <div>
