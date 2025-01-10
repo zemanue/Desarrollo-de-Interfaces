@@ -5,11 +5,20 @@ document.addEventListener("DOMContentLoaded", function () {
     let listaSegundoPlato = document.getElementById("segundoPlato")
     let listaPostre = document.getElementById("postre")
 
+    const precioSalmorejo = 4
+    const precioCocido = 3
+    const precioCampero = 4
+    const precioAlbondigas = 6
+    const precioCoulant = 2.50
+    const precioCheesecake = 3
+
     let imagenPrimerPlato = document.getElementById("imagenPrimerPlato")
     let imagenSegundoPlato = document.getElementById("imagenSegundoPlato")
     let imagenPostre = document.getElementById("imagenPostre")
 
     let botonCalcularPrecio = document.getElementById("botonCalculoPrecio")
+
+    let checkboxDescuento = document.getElementById("checkboxDescuento")
 
     // Acciones cuando 
     listaPrimerPlato.addEventListener("change", function () {
@@ -69,31 +78,36 @@ document.addEventListener("DOMContentLoaded", function () {
 
         switch (primerPlato) {
             case "salmorejo":
-                precioTotal += 4
+                precioTotal += precioSalmorejo
                 break
             case "cocido":
-                precioTotal += 4
+                precioTotal += precioCocido
                 break
         }
 
         switch (segundoPlato) {
             case "campero":
-                precioTotal += 4
+                precioTotal += precioCampero
                 break
             case "albondigas":
-                precioTotal += 6
+                precioTotal += precioAlbondigas
                 break
         }
 
         switch (postre) {
             case "coulant":
-                precioTotal += 2.50
+                precioTotal += precioCoulant
                 break
             case "cheesecake":
-                precioTotal += 3
+                precioTotal += precioCheesecake
                 break
         }
 
-        alert(`El precio total es de ${precioTotal}€`)
+        if (checkboxDescuento.checked) {
+            precioTotal *= 0.9 // 10% de descuento
+            alert(`¡Descuento conseguido! El precio total es de ${precioTotal}€`)
+        } else {
+            alert(`El precio total es de ${precioTotal}€`)
+        }
     })
 })
