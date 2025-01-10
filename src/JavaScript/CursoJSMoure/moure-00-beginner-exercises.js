@@ -109,3 +109,4 @@ console.log("Intentando modificar los valores de las constantes:")
 
 // 10. Comenta las líneas que produzcan algún tipo de error al ejecutarse
 console.log("No se pueden modificar los valores de las constantes, sea cual sea su tipo de dato");
+console.log(5 / "Manu")
