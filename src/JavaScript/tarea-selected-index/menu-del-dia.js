@@ -9,6 +9,8 @@ document.addEventListener("DOMContentLoaded", function () {
     let imagenSegundoPlato = document.getElementById("imagenSegundoPlato")
     let imagenPostre = document.getElementById("imagenPostre")
 
+    let botonCalcularPrecio = document.getElementById("botonCalculoPrecio")
+
     // Acciones cuando 
     listaPrimerPlato.addEventListener("change", function () {
         let platoSeleccionado = listaPrimerPlato.value
@@ -58,4 +60,40 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     })
 
+    botonCalcularPrecio.addEventListener("click", function () {
+        let precioTotal = 0
+
+        let primerPlato = listaPrimerPlato.value
+        let segundoPlato = listaSegundoPlato.value
+        let postre = listaPostre.value
+
+        switch (primerPlato) {
+            case "salmorejo":
+                precioTotal += 4
+                break
+            case "cocido":
+                precioTotal += 4
+                break
+        }
+
+        switch (segundoPlato) {
+            case "campero":
+                precioTotal += 4
+                break
+            case "albondigas":
+                precioTotal += 6
+                break
+        }
+
+        switch (postre) {
+            case "coulant":
+                precioTotal += 2.50
+                break
+            case "cheesecake":
+                precioTotal += 3
+                break
+        }
+
+        alert(`El precio total es de ${precioTotal}€`)
+    })
 })
