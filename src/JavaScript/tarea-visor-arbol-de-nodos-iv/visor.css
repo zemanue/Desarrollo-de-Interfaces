@@ -1,0 +1,24 @@
+body {
+    background-color:azure;
+    margin: 5%;
+}
+
+
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+#ampliada {
+    width: 100%;
+}
+
+#visorImagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#visorImagenes img {
+    width: 16.6666%;
+}
