@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-    let imagenPrincipal = document.createElement("img")
+    let imagenAmpliada = document.getElementById("ampliada");
+    
+    
     
 })
