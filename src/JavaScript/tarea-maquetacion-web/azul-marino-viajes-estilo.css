@@ -32,10 +32,8 @@
 
 .seccion {
     width: 95%;
-/* Centrar en la pantalla sus elementos */
     display: flex;
     justify-content: center;
-    
     padding: 20px;
 }
 
@@ -57,4 +55,14 @@
     border: none;
     border-radius: 4px;
     cursor: pointer;
+}
+
+#seccion2 {
+    width: 100%;
+    display: inline;
+}
+
+#seccion2 img {
+    width: 100%;
+    height: auto;
 }
