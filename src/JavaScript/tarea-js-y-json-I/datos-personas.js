@@ -54,6 +54,8 @@ document.addEventListener('DOMContentLoaded', function () {
     
     // Instroducir los datos en el HTML
     for (let i = 0; i < datosPersonas.length; i++) {
+        let seccionPersonas = document.getElementById('seccionPersonas')
+
         let div = document.createElement('div')
 
         let persona = datosPersonas[i]
@@ -62,23 +64,26 @@ document.addEventListener('DOMContentLoaded', function () {
         img.src = persona.foto
         img.alt = `${persona.nombre} ${persona.apellido}`
 
-        let nombre = document.createElement('p')
-        nombre.textContent = `Nombre: ${persona.nombre}`
+        let listaInfo = document.createElement('ul')
 
-        let apellido = document.createElement('p')
+        let infoPersona = document.createElement('li')
+        infoPersona.textContent = `Nombre: ${persona.nombre}`
+
+        let apellido = document.createElement('li')
         apellido.textContent = `Apellido: ${persona.apellido}`
 
-        let edad = document.createElement('p')
+        let edad = document.createElement('li')
         edad.textContent = `Edad: ${persona.edad}`
 
-        let curso = document.createElement('p')
+        let curso = document.createElement('li')
         curso.textContent = `Curso: ${persona.curso}`
 
-        let modalidad = document.createElement('p')
+        let modalidad = document.createElement('li')
         modalidad.textContent = `Modalidad: ${persona.modalidad}`
 
-        div.append(img, nombre, apellido, edad, curso, modalidad)
-        document.body.appendChild(div)
+        listaInfo.append(infoPersona, apellido, edad, curso, modalidad)
+        div.append(img, listaInfo)
+        seccionPersonas.appendChild(div)
     }
 
 
