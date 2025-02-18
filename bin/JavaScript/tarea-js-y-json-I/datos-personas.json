@@ -21,7 +21,7 @@
         "edad": 34,
         "curso": "2 DAM",
         "modalidad": "Online",
-        "foto": "mujer1.jpg"
+        "foto": "mujer2.jpg"
     },
     {
         "nombre": "Javier",
@@ -29,7 +29,7 @@
         "edad": 22,
         "curso": "1 DAM",
         "modalidad": "Presencial",
-        "foto": "hombre1.jpg"
+        "foto": "hombre2.jpg"
     },
     {
         "nombre": "Laura",
@@ -37,7 +37,7 @@
         "edad": 20,
         "curso": "1 DAM",
         "modalidad": "Presencial",
-        "foto": "mujer1.jpg"
+        "foto": "mujer3.jpg"
     },
     {
         "nombre": "Carlos",
@@ -45,6 +45,6 @@
         "edad": 23,
         "curso": "2 DAM",
         "modalidad": "Presencial",
-        "foto": "hombre1.jpg"
+        "foto": "hombre3.jpg"
     }
 ]

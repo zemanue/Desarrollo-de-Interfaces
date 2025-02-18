@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
             "edad": 34,
             "curso": "2 DAM",
             "modalidad": "Online",
-            "foto": "mujer1.jpg"
+            "foto": "mujer2.jpg"
         },
         {
             "nombre": "Javier",
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
             "edad": 22,
             "curso": "1 DAM",
             "modalidad": "Presencial",
-            "foto": "hombre1.jpg"
+            "foto": "hombre2.jpg"
         },
         {
             "nombre": "Laura",
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
             "edad": 20,
             "curso": "1 DAM",
             "modalidad": "Presencial",
-            "foto": "mujer1.jpg"
+            "foto": "mujer3.jpg"
         },
         {
             "nombre": "Carlos",
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
             "edad": 23,
             "curso": "2 DAM",
             "modalidad": "Presencial",
-            "foto": "hombre1.jpg"
+            "foto": "hombre3.jpg"
         }
     ]`)
 
@@ -67,19 +67,19 @@ document.addEventListener('DOMContentLoaded', function () {
         let listaInfo = document.createElement('ul')
 
         let infoPersona = document.createElement('li')
-        infoPersona.textContent = `Nombre: ${persona.nombre}`
+        infoPersona.innerHTML = `Nombre: <span class="resaltado">${persona.nombre}</span>`
 
         let apellido = document.createElement('li')
-        apellido.textContent = `Apellido: ${persona.apellido}`
+        apellido.innerHTML = `Apellido: <span class="resaltado">${persona.apellido}</span>`
 
         let edad = document.createElement('li')
-        edad.textContent = `Edad: ${persona.edad}`
+        edad.innerHTML = `Edad: <span class="resaltado">${persona.edad}</span>`
 
         let curso = document.createElement('li')
-        curso.textContent = `Curso: ${persona.curso}`
+        curso.innerHTML = `Curso: <span class="resaltado">${persona.curso}</span>`
 
         let modalidad = document.createElement('li')
-        modalidad.textContent = `Modalidad: ${persona.modalidad}`
+        modalidad.innerHTML = `Modalidad: <span class="resaltado">${persona.modalidad}</span>`
 
         listaInfo.append(infoPersona, apellido, edad, curso, modalidad)
         div.append(img, listaInfo)
