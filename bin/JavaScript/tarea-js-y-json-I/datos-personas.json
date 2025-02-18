@@ -1,0 +1,50 @@
+[
+    {
+        "nombre": "Claudia",
+        "apellido": "Pérez",
+        "edad": 29,
+        "curso": "1 DAM",
+        "modalidad": "Online",
+        "foto": "mujer1.jpg"
+    },
+    {
+        "nombre": "Manuel",
+        "apellido": "Gámez",
+        "edad": 31,
+        "curso": "2 DAM",
+        "modalidad": "Online",
+        "foto": "hombre1.jpg"
+    },
+    {
+        "nombre": "María",
+        "apellido": "García",
+        "edad": 34,
+        "curso": "2 DAM",
+        "modalidad": "Online",
+        "foto": "mujer1.jpg"
+    },
+    {
+        "nombre": "Javier",
+        "apellido": "Blanco",
+        "edad": 22,
+        "curso": "1 DAM",
+        "modalidad": "Presencial",
+        "foto": "hombre1.jpg"
+    },
+    {
+        "nombre": "Laura",
+        "apellido": "Pinilla",
+        "edad": 20,
+        "curso": "1 DAM",
+        "modalidad": "Presencial",
+        "foto": "mujer1.jpg"
+    },
+    {
+        "nombre": "Carlos",
+        "apellido": "Ramírez",
+        "edad": 23,
+        "curso": "2 DAM",
+        "modalidad": "Presencial",
+        "foto": "hombre1.jpg"
+    }
+]
