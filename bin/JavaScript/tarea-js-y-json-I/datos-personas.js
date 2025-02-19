@@ -9,6 +9,12 @@ document.addEventListener('DOMContentLoaded', function () {
         if (peticion.readyState === 4 && peticion.status === 200) {
             let datosPersonas = JSON.parse(peticion.responseText); // Convertir la respuesta JSON de string a objeto
 
+            // Actualizar la edad de las personas
+            // Bucle for para recorrer datosPersonas y calcular la edad de cada persona
+            for (let i = 0; i < datosPersonas.length; i++) {
+                let persona = datosPersonas[i]
+                persona.edad = calcularEdad(persona.anioNacimiento)
+            }
 
             // Introducir los datos en el HTML
             for (let i = 0; i < datosPersonas.length; i++) {
@@ -50,3 +56,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     peticion.send()
     })
+
+    function calcularEdad(fechaNacimiento) {
+        let fechaActual = new Date().getFullYear()
+        let edad = fechaActual - fechaNacimiento
+
+        return edad
+    }

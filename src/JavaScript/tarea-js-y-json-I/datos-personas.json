@@ -2,7 +2,7 @@
     {
         "nombre": "Claudia",
         "apellido": "Pérez",
-        "edad": 29,
+        "anioNacimiento": 1996,
         "curso": "1 DAM",
         "modalidad": "Online",
         "foto": "mujer1.jpg"
@@ -10,7 +10,7 @@
     {
         "nombre": "Manuel",
         "apellido": "Gámez",
-        "edad": 31,
+        "anioNacimiento": 1994,
         "curso": "2 DAM",
         "modalidad": "Online",
         "foto": "hombre1.jpg"
@@ -18,7 +18,7 @@
     {
         "nombre": "María",
         "apellido": "García",
-        "edad": 34,
+        "anioNacimiento": 1991,
         "curso": "2 DAM",
         "modalidad": "Online",
         "foto": "mujer2.jpg"
@@ -26,7 +26,7 @@
     {
         "nombre": "Javier",
         "apellido": "Blanco",
-        "edad": 22,
+        "anioNacimiento": 2003,
         "curso": "1 DAM",
         "modalidad": "Presencial",
         "foto": "hombre2.jpg"
@@ -34,7 +34,7 @@
     {
         "nombre": "Laura",
         "apellido": "Pinilla",
-        "edad": 20,
+        "anioNacimiento": 2005,
         "curso": "1 DAM",
         "modalidad": "Presencial",
         "foto": "mujer3.jpg"
@@ -42,7 +42,7 @@
     {
         "nombre": "Carlos",
         "apellido": "Ramírez",
-        "edad": 23,
+        "anioNacimiento": 2003,
         "curso": "2 DAM",
         "modalidad": "Presencial",
         "foto": "hombre3.jpg"
