@@ -30,22 +30,24 @@ document.addEventListener("DOMContentLoaded", function () {
                 let ul = document.createElement("ul")
                 div.appendChild(ul)
 
-                // Arrays con los títulos y los valores de cada propiedad del coche
-                let titulos = ["Marca", "Modelo", "Kilómetros", "Año", "Precio", "Motor", "Foto", "Disponible"]
-                let valores = Object.values(coche) 
+                // Map con los títulos y los valores de cada propiedad del coche
+                let propiedades = new Map([
+                    ["Marca", coche.marca],
+                    ["Modelo", coche.modelo],
+                    ["Kilómetros", coche.kilometros],
+                    ["Año", coche.anyo],
+                    ["Precio", coche.precio],
+                    ["Motor", coche.motor],
+                    ["Disponible", coche.disponible ? "Si" : "No"]
+                ])
 
-                // Bucle que va añadiendo cada propiedad del coche a la lista
-                for (let i = 0; i < titulos.length; i++) {
-                    // La información de la foto no se añade
-                    if (titulos[i] === "Foto") {
-                        continue
-                    }
-
+                // Bucle que va añadiendo cada propiedad     del coche a la lista
+                propiedades.forEach((valor, titulo) => {
                     // Se crea un li con el título y la propiedad del coche
                     let li = document.createElement("li")
-                    li.innerHTML = `<strong>${titulos[i]}</strong>: ${valores[i]}`
+                    li.innerHTML = `<strong>${titulo}</strong>: ${valor}`
                     ul.appendChild(li)
-                }
+                })
 
             })
         } else if (peticion.readyState === 4) {
