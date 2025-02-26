@@ -1,0 +1,21 @@
+#seccionCoches div {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+}
+
+#seccionCoches img {
+    width: 500px;
+    height: auto;
+}
+
+#seccionCoches ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#seccionCoches li {
+    padding: 2px;
+}
