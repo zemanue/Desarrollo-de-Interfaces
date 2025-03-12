@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogo>
+    <producto>
+        <nombre>Samsung Galaxy S21 Ultra</nombre>
+        <descripcion>Telefono inteligente de alta gama con camara cuádruple.</descripcion>
+        <precio>1199.99</precio>
+        <caracteristicas>
+            <caracteristica nombre="Pantalla">6.8 pulgadas Dynamic AMOLED 2X</caracteristica>
+            <caracteristica nombre="Procesador">Exynos 2100</caracteristica>
+            <caracteristica nombre="Memoria">12 GB RAM, 128 GB ROM</caracteristica>
+        </caracteristicas>
+    </producto>
+    <producto>
+        <nombre>Xiaomi Mi 11</nombre>
+        <descripcion>Telefono inteligente con pantalla AMOLED y carga rapida.</descripcion>
+        <precio>749.99</precio>
+        <caracteristicas>
+            <caracteristica nombre="Pantalla">6.81 pulgadas AMOLED</caracteristica>
+            <caracteristica nombre="Procesador">Snapdragon 888</caracteristica>
+            <caracteristica nombre="Memoria">8 GB RAM, 128 GB ROM</caracteristica>
+        </caracteristicas>
+    </producto>
+    <producto>
+        <nombre>Huawei MateBook X Pro</nombre>
+        <descripcion>Portatil ultraligero con pantalla 3K y gran rendimiento.</descripcion>
+        <precio>1499.99</precio>
+        <caracteristicas>
+            <caracteristica nombre="Pantalla">13.9 pulgadas 3K LTPS</caracteristica>
+            <caracteristica nombre="Procesador">Intel Core i7</caracteristica>
+            <caracteristica nombre="Memoria">16 GB RAM, 1 TB SSD</caracteristica>
+        </caracteristicas>
+    </producto>
+    <producto>
+        <nombre>Lenovo Yoga Tab 13</nombre>
+        <descripcion>Tablet con pantalla 2K y soporte para stylus.</descripcion>
+        <precio>679.99</precio>
+        <caracteristicas>
+            <caracteristica nombre="Pantalla">13 pulgadas 2K LTPS</caracteristica>
+            <caracteristica nombre="Procesador">Snapdragon 870</caracteristica>
+            <caracteristica nombre="Memoria">8 GB RAM, 128 GB ROM</caracteristica>
+        </caracteristicas>
+    </producto>
+    <producto>
+        <nombre>Sony WH-1000XM4</nombre>
+        <descripcion>Auriculares inalambricos con cancelacion de ruido.</descripcion>
+        <precio>349.99</precio>
+        <caracteristicas>
+            <caracteristica nombre="Conectividad">Bluetooth 5.0</caracteristica>
+            <caracteristica nombre="Bateria">Hasta 30 horas</caracteristica>
+            <caracteristica nombre="Extras">Cancelacion de ruido activa</caracteristica>
+        </caracteristicas>
+    </producto>
+</catalogo>

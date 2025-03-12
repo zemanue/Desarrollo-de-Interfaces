@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libros>
+    <libro>
+        <titulo>1984</titulo>
+        <autor>George Orwell</autor>
+        <anyo>1949</anyo>
+    </libro>
+    <libro>
+        <titulo>Yo, robot</titulo>
+        <autor>Isaac Asimov</autor>
+        <anyo>1950</anyo>
+    </libro>
+    <libro>
+        <titulo>Sueñan los androides con ovejas electricas?</titulo>
+        <autor>Philip K. Dick</autor>
+        <anyo>1968</anyo>
+    </libro>
+    <libro>
+        <titulo>Un mundo feliz</titulo>
+        <autor>Aldous Huxley</autor>
+        <anyo>1932</anyo>
+    </libro>
+    <libro>
+        <titulo>Dune</titulo>
+        <autor>Frank Herbert</autor>
+        <anyo>1965</anyo>
+    </libro>
+    <libro>
+        <titulo>Fahrenheit 451</titulo>
+        <autor>Ray Bradbury</autor>
+        <anyo>1953</anyo>
+    </libro>
+    <libro>
+        <titulo>El problema de los tres cuerpos</titulo>
+        <autor>Cixin Liu</autor>
+        <anyo>2008</anyo>
+    </libro>
+</libros>
