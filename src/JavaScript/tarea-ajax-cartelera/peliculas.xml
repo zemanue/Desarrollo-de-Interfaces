@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<peliculas>
+    <pelicula>
+        <titulo>Oppenheimer</titulo>
+        <direccion>Christopher Nolan</direccion>
+        <duracion>180</duracion>
+        <nacionalidad>Estados Unidos, Reino Unido</nacionalidad>
+        <actores>Cillian Murphy, Emily Blunt, Robert Downey Jr.</actores>
+        <genero>Drama, Biográfico, Histórico</genero>
+        <sinopsis>La historia del científico J. Robert Oppenheimer y su papel en el desarrollo de la bomba atómica.</sinopsis>
+    </pelicula>
+
+    <pelicula>
+        <titulo>Barbie</titulo>
+        <direccion>Greta Gerwig</direccion>
+        <duracion>114</duracion>
+        <nacionalidad>Estados Unidos</nacionalidad>
+        <actores>Margot Robbie, Ryan Gosling, America Ferrera</actores>
+        <genero>Comedia, Fantasía</genero>
+        <sinopsis>Barbie y Ken viven una vida idílica en Barbieland, pero cuando Barbie decide explorar el mundo real, se da cuenta de que no todo es perfecto.</sinopsis>
+    </pelicula>
+
+    <pelicula>
+        <titulo>Spider-Man: Cruzando el Multiverso</titulo>
+        <direccion>Joaquim Dos Santos, Kemp Powers, Justin K. Thompson</direccion>
+        <duracion>140</duracion>
+        <nacionalidad>Estados Unidos</nacionalidad>
+        <actores>Shameik Moore, Hailee Steinfeld, Oscar Isaac</actores>
+        <genero>Animación, Acción, Aventura</genero>
+        <sinopsis>Miles Morales se embarca en una aventura a través del multiverso con Gwen Stacy y un nuevo equipo de Spider-People para enfrentarse a un villano más poderoso que cualquier cosa que hayan encontrado antes.</sinopsis>
+    </pelicula>
+
+    <pelicula>
+        <titulo>La sociedad de la nieve</titulo>
+        <direccion>J.A. Bayona</direccion>
+        <duracion>144</duracion>
+        <nacionalidad>España</nacionalidad>
+        <actores>Enzo Vogrincic, Matías Recalt, Agustín Pardella</actores>
+        <genero>Drama, Supervivencia</genero>
+        <sinopsis>Historia real del trágico accidente aéreo en los Andes en 1972 y la lucha por la supervivencia de los pasajeros.</sinopsis>
+    </pelicula>
+
+        <pelicula>
+        <titulo>Past Lives</titulo>
+        <direccion>Celine Song</direccion>
+        <duracion>106</duracion>
+        <nacionalidad>Estados Unidos, Corea del Sur</nacionalidad>
+        <actores>Greta Lee, Teo Yoo, John Magaro</actores>
+        <genero>Drama, Romance</genero>
+        <sinopsis>Dos amigos de la infancia de Corea del Sur se reencuentran años después en Nueva York, explorando lo que pudo haber sido.</sinopsis>
+    </pelicula>
+
+        <pelicula>
+        <titulo>The Zone of Interest</titulo>
+        <direccion>Jonathan Glazer</direccion>
+        <duracion>105</duracion>
+        <nacionalidad>Reino Unido, Polonia</nacionalidad>
+        <actores>Christian Friedel, Sandra Hüller</actores>
+        <genero>Drama, Bélica</genero>
+        <sinopsis>Una mirada perturbadora a la vida cotidiana de un comandante nazi y su familia viviendo junto a Auschwitz.</sinopsis>
+    </pelicula>
+</peliculas>
