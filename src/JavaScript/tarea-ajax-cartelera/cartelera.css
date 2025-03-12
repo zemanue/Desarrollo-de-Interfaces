@@ -1,0 +1,18 @@
+section {
+    display: flex; /* Flexbox: alinear horizontalmente */
+    justify-content: space-between; /* Añade espacio entre los divs */
+    align-items: flex-start; /* Se alinean en la línea superior */
+    width: 90%; /* Ajuste del ancho total */
+    margin: 0 auto; /* Centrar en la página */
+}
+
+#divPeliculasDisponibles, #divPeliculaSeleccionada {
+    width: 45%;
+    padding: 10px;
+    box-sizing: border-box; /* Asegura que el padding no aumente el tamaño total */
+    border: 1px solid #ccc; 
+}
+
+#divPeliculaSeleccionada {
+    background-color: #fffce7;
+}
