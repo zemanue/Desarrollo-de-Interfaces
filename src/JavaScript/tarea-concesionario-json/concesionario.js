@@ -2,13 +2,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Crear una petición para obtener los datos del archivo JSON
     let peticion = new XMLHttpRequest()
-    peticion.open('GET', 'coches.json', true)
+    peticion.open('GET', 'coches.json', true) // Configurar la petición: obtener datos (GET) del archivo coches.json de forma asíncrona (true)
+    peticion.responseType = 'json' // Indicar que la respuesta es JSON
+    peticion.send() 
 
     // onreadystatechange se ejecuta cada vez que cambia el estado de la petición
-    peticion.onreadystatechange = function () {
+    peticion.onload = function () {
         // Comprobar si la petición se completó correctamente
-        if (peticion.readyState === 4 && peticion.status === 200) {
-            let datosCoches = JSON.parse(peticion.responseText) // Convertir la respuesta JSON de string a objeto
+        if (peticion.status === 200) {
+            let datosCoches = peticion.response // Obtener la respuesta JSON
 
             // Crear un section
             let section = document.createElement('section')
@@ -31,10 +33,13 @@ document.addEventListener("DOMContentLoaded", function () {
                 // Añadir al section el div generado por el método mostrarDatos de Coche.js
                 section.appendChild(coche.mostrarDatos())
             })
-        } else if (peticion.readyState === 4) {
-            console.error('Error al cargar el archivo JSON:', peticion.statusText);
+        } else {
+            alert('Error al cargar el archivo JSON:', peticion.statusText)
         }
     }
 
-    peticion.send()
+    peticion.onerror = function () {
+        alert('Error al cargar el archivo JSON:', peticion.statusText);
+    }
+
 })
