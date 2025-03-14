@@ -1,18 +1,54 @@
 section {
     display: flex; /* Flexbox: alinear horizontalmente */
     justify-content: space-between; /* Añade espacio entre los divs */
+    gap: 2%;
     align-items: flex-start; /* Se alinean en la línea superior */
     width: 90%; /* Ajuste del ancho total */
     margin: 0 auto; /* Centrar en la página */
 }
 
-#divPeliculasDisponibles, #divPeliculaSeleccionada {
-    width: 45%;
+#peliculasDisponibles, #peliculaSeleccionada {
+    width: 48%;
     padding: 10px;
     box-sizing: border-box; /* Asegura que el padding no aumente el tamaño total */
     border: 1px solid #ccc; 
 }
 
-#divPeliculaSeleccionada {
-    background-color: #fffce7;
+#peliculasDisponibles {
+    display: grid; /* Grid: para mostrar las películas en forma de columna */
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas iguales */
+    gap: 10px; /* Espacio entre las películas */
+    overflow-y: auto; /* Scroll vertical si hay muchas películas */
+}
+
+#peliculaSeleccionada {
+    background-color: #ffe5b4;
+}
+
+.pelicula {
+    display: flex;
+    flex-direction: column; /* Acomoda los elementos en vertical */
+    align-items: center; /* Centra el contenido horizontalmente */
+    text-align: center;
+    border: 2px solid orange;
+    padding: 10px;
+    background-color: #ffe5b4;
+    cursor: pointer; /* Indica que es clickeable */
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.pelicula:hover {
+    background-color: #fdca6d;
+}
+
+.pelicula img {
+    width: 100%; /* Ajusta la imagen al ancho del div */
+    height: auto; /* Mantiene la proporción */
+    border-radius: 5px; /* Bordes redondeados opcionales */
+}
+
+.pelicula h5 {
+    margin: 10px 0 0 0; /* Espaciado superior */
+    font-size: 1em;
+    color: #333;
 }
