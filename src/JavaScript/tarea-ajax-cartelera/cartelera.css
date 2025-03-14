@@ -1,9 +1,13 @@
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 section {
-    display: flex; /* Flexbox: alinear horizontalmente */
+    display: flex;
     justify-content: space-between; /* Añade espacio entre los divs */
     gap: 2%;
     align-items: flex-start; /* Se alinean en la línea superior */
-    width: 90%; /* Ajuste del ancho total */
+    width: 90%;
     margin: 0 auto; /* Centrar en la página */
 }
 
@@ -21,19 +25,15 @@ section {
     overflow-y: auto; /* Scroll vertical si hay muchas películas */
 }
 
-#peliculaSeleccionada {
-    background-color: #ffe5b4;
-}
-
 .pelicula {
     display: flex;
-    flex-direction: column; /* Acomoda los elementos en vertical */
-    align-items: center; /* Centra el contenido horizontalmente */
-    text-align: center;
+    flex-direction: column; /* Alineado verticalmente */
+    align-items: center; /* Centrado horizontalmente */
+    text-align: center; 
     border: 2px solid orange;
     padding: 10px;
     background-color: #ffe5b4;
-    cursor: pointer; /* Indica que es clickeable */
+    cursor: pointer;
     transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
@@ -44,11 +44,28 @@ section {
 .pelicula img {
     width: 100%; /* Ajusta la imagen al ancho del div */
     height: auto; /* Mantiene la proporción */
-    border-radius: 5px; /* Bordes redondeados opcionales */
 }
 
 .pelicula h5 {
-    margin: 10px 0 0 0; /* Espaciado superior */
-    font-size: 1em;
+    margin: 10px 0 0 0; 
+    font-size: 1.1em;
     color: #333;
+}
+
+#peliculaSeleccionada {
+    padding: 30px;
+    background-color: #ffe5b4;
+    border: 2px solid orange;
+    position: sticky; /* Se mantiene fijo al hacer scroll */
+    top: 10px; 
+}
+
+#peliculaSeleccionada h2 {
+    font-size: 2em;
+}
+
+#peliculaSeleccionada ul {
+    list-style: none; 
+    padding: 10px;
+    line-height: 1.6;
 }

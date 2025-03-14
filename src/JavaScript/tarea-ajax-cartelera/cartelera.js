@@ -39,6 +39,8 @@ document.addEventListener('DOMContentLoaded', function () {
             console.error("No se encontraron elementos 'pelicula' en el documento XML.")
             return
         }
+
+        let primeraIteracion = true;
         peliculas.forEach(pelicula => {
             pelicula = {
                 titulo: pelicula.querySelector("titulo").textContent,
@@ -52,7 +54,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 trailerSrc: pelicula.querySelector("src").textContent,
                 trailerTitle: pelicula.querySelector("title").textContent
             }
+
             agregarPelicula(pelicula)
+
+            if (primeraIteracion) {
+                mostrarInfoPelicula(pelicula)
+                primeraIteracion = false
+            }
         })
     }
 
