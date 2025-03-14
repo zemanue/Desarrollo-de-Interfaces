@@ -53,7 +53,7 @@ section {
 }
 
 #peliculaSeleccionada {
-    padding: 30px;
+    padding-left: 50px;
     background-color: #ffe5b4;
     border: 2px solid orange;
     position: sticky; /* Se mantiene fijo al hacer scroll */

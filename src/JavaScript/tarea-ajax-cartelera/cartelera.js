@@ -25,6 +25,25 @@ document.addEventListener('DOMContentLoaded', function () {
         console.error("Error al cargar el archivo XML:", xhr.statusText)
     }
 
+    /** Si usáramos fetch:
+        fetch("peliculas.xml")
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Error al cargar el archivo XML: " + response.statusText)
+            }
+            return response.text()
+        })
+        .then(str => (new window.DOMParser()).parseFromString(str, "text/xml"))
+        .then(peliculasXML => {
+            console.log("Petición completada correctamente")
+            console.log(peliculasXML)
+            mostrarPeliculas(peliculasXML)
+        })
+        .catch(error => {
+            console.error(error)
+        })
+     */
+
     /**
      * Muestra las películas disponibles
      * @param {Document} peliculasXML - Documento XML con los datos de las películas
@@ -106,6 +125,4 @@ document.addEventListener('DOMContentLoaded', function () {
             </ul>
         `
     }
-
-
 })
