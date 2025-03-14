@@ -9,6 +9,10 @@
         <genero>Drama, Biográfico, Histórico</genero>
         <sinopsis>La historia del científico J. Robert Oppenheimer y su papel en el desarrollo de la bomba atómica.</sinopsis>
         <cartel>https://pics.filmaffinity.com/Oppenheimer-828933592-large.jpg</cartel>
+        <trailer>
+            <src>https://www.youtube.com/embed/JpUd4BS7yI0</src>
+            <title>OPPENHEIMER – Nuevo Tráiler (Universal Studios) HD</title>
+        </trailer>
     </pelicula>
     <pelicula>
         <titulo>Barbie</titulo>
@@ -19,6 +23,10 @@
         <genero>Comedia, Fantasía</genero>
         <sinopsis>Barbie y Ken viven una vida idílica en Barbieland, pero cuando Barbie decide explorar el mundo real, se da cuenta de que no todo es perfecto.</sinopsis>
         <cartel>https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p13472534_p_v8_am.jpg</cartel>
+        <trailer>
+            <src>https://www.youtube.com/embed/vsJgLu3PIno</src>
+            <title>Barbie | Tráiler principal</title>
+        </trailer>
     </pelicula>
     <pelicula>
         <titulo>Spider-Man: Cruzando el Multiverso</titulo>
@@ -29,6 +37,10 @@
         <genero>Animación, Acción, Aventura</genero>
         <sinopsis>Miles Morales se embarca en una aventura a través del multiverso con Gwen Stacy y un nuevo equipo de Spider-People para enfrentarse a un villano más poderoso que cualquier cosa que hayan encontrado antes.</sinopsis>
         <cartel>https://m.media-amazon.com/images/I/8105Oc1+FPL._AC_UF894,1000_QL80_.jpg</cartel>
+        <trailer>
+            <src>https://www.youtube.com/embed/b_yMOiRgMmQ</src>
+            <title>SPIDER-MAN: CRUZANDO EL MULTIVERSO. Tráiler oficial español HD. Exclusivamente en cines.</title>>
+        </trailer>
     </pelicula>
     <pelicula>
         <titulo>La sociedad de la nieve</titulo>
@@ -39,6 +51,10 @@
         <genero>Drama, Supervivencia</genero>
         <sinopsis>Historia real del trágico accidente aéreo en los Andes en 1972 y la lucha por la supervivencia de los pasajeros.</sinopsis>
         <cartel>https://pics.filmaffinity.com/La_sociedad_de_la_nieve-826551508-large.jpg</cartel>
+        <trailer>
+            <src>https://www.youtube.com/embed/l9tP4M8URhQ</src>
+            <title>La sociedad de la nieve | Tráiler oficial | Netflix</title>
+        </trailer>
     </pelicula>
     <pelicula>
         <titulo>Past Lives</titulo>
@@ -49,6 +65,10 @@
         <genero>Drama, Romance</genero>
         <sinopsis>Dos amigos de la infancia de Corea del Sur se reencuentran años después en Nueva York, explorando lo que pudo haber sido.</sinopsis>
         <cartel>https://i.ebayimg.com/00/s/MTYwMFgxMDc5/z/VkoAAOSwagRlr94a/$_57.JPG?set_id=880000500F</cartel>
+        <trailer>
+            <src>https://www.youtube.com/embed/jYktrkGDf58</src>
+            <title>Vidas pasadas - Trailer español</title>
+        </trailer>
     </pelicula>
     <pelicula>
         <titulo>The Zone of Interest</titulo>
@@ -59,5 +79,9 @@
         <genero>Drama, Bélica</genero>
         <sinopsis>Una mirada perturbadora a la vida cotidiana de un comandante nazi y su familia viviendo junto a Auschwitz.</sinopsis>
         <cartel>https://pics.filmaffinity.com/The_Zone_of_Interest-642266949-large.jpg</cartel>
+        <trailer>
+            <src>https://www.youtube.com/embed/qmxFrv9XBQY</src>
+            <title>ZONA DE INTERÉS Tráiler Español (2024) HD</title>
+        </trailer>
     </pelicula>
 </peliculas>
