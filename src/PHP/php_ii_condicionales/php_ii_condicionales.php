@@ -21,33 +21,51 @@ calificación:
 Por ejemplo: "¡Excelente!" para una A, "Buen trabajo" para una B, y así sucesivamente.
 -->
 <?php
-
-
 if (!$_POST) {
     echo "Introduce una nota para saber la calificación";
     exit;
 
 } else {
-    echo "Se ha introducido una nota<br>";
-        $nota = $_POST["nota"];
+    $nota = $_POST["nota"];
 
-        if ($nota < 0 || $nota > 100) {
+    if ($nota >= 90 && $nota <= 100) {
+        $calificacion = "A";
+    } elseif ($nota >= 80 && $nota <= 89) {
+        $calificacion = "B";
+    } elseif ($nota >= 70 && $nota <= 79) {
+        $calificacion = "C";
+    } elseif ($nota >= 60 && $nota <= 69) {
+        $calificacion = "D";
+    } elseif ($nota >= 0 && $nota <= 59) {
+        $calificacion = "F";
+    } else {
         echo "La nota introducida no es válida. Debe ser un número entre 0 y 100";
         exit;
-    } 
-
-        echo "Tu nota es: <br>";
-    if ($nota >= 90 && $nota <= 100) {
-        echo "A: ¡Excelente!";
-    } elseif ($nota >= 80 && $nota <= 89) {
-        echo "B<br>Buen trabajo";
-    } elseif ($nota >= 70 && $nota <= 79) {
-        echo "C<br>Suficiente";
-    } elseif ($nota >= 60 && $nota <= 69) {
-        echo "D<br>Necesitas mejorar";
-    } elseif ($nota >= 0 && $nota <= 59) {
-        echo "F<br>Has suspendido";
     }
 
-}
+    switch ($calificacion) {
+        case "A":
+            $mensajeAdicional = "¡Excelente!";
+            break;
+        case "B":
+            $mensajeAdicional = "¡Buen trabajo!";
+            break;
+        case "C":
+            $mensajeAdicional = "Bien hecho, pero puedes mejorar.";
+            break;
+        case "D":
+            $mensajeAdicional = "Aprobado por los pelos. ¡No te confíes!";
+            break;
+        case "F":
+            $mensajeAdicional = "Has suspendido, lo siento. Suerte para la próxima.";
+            break;
+        default:
+            $mensajeAdicional = "";
+            break;
+    }
 
+    echo "Tu nota es: " . $calificacion . ". <br>" . $mensajeAdicional;
+    echo "<br>";
+
+}
+?>
