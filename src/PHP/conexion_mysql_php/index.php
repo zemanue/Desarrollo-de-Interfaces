@@ -48,7 +48,7 @@ sistema. Asegúrate de que los formularios sean fáciles de usar y claros. -->
     <p>Por favor, escoge una de las opciones disponibles</p>
     <ul>
         <li><a href="agregar_producto_view.html">Agregar un nuevo producto</a></li>
-        <li><a href="listar_productos_view.html">Listar Productos</a></li>
+        <li><a href="listar_productos.php">Listar Productos</a></li>
         <li><a href="actualizar_producto_view.html">Actualizar Producto</a></li>
         <li><a href="eliminar_producto_view.html">Eliminar Producto</a></li>
     </ul>
