@@ -8,11 +8,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $precio = $_POST['precio'];
     $stock = $_POST['stock'];
 
-    $nombre = mysqli_real_escape_string($conexion, $nombre);
-    $descripcion = mysqli_real_escape_string($conexion, $descripcion);
-    $precio = mysqli_real_escape_string($conexion, $precio);
-    $stock = mysqli_real_escape_string($conexion, $stock);
-
     $consulta = "INSERT INTO productos (nombre, descripcion, precio, stock) VALUES ('$nombre', '$descripcion', $precio, $stock)";
 
     if (mysqli_query($conexion, $consulta)) {
@@ -23,5 +18,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     echo '<br><a href="index.php">Volver al inicio</a>';
 
-
+    // Cerrar conexión
+    mysqli_close($conexion);
 }
