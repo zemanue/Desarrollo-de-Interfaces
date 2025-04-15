@@ -60,6 +60,11 @@ mysqli_close($conexion);
             </tbody>
         </table>
 
+        <p><a href='agregar_producto_view.html'>Nuevo producto</a></p>
+        <p><a href='actualizar_producto_elegir.php'>Actualizar producto</a></p>
+        <p><a href='eliminar_producto_elegir.php'>Eliminar producto</a></p>
+        <p><a href='index.php'>Volver al inicio</a></p>
+
     <?php else: ?>
         <p>No hay productos disponibles en la base de datos.</p>
         <p><a href='agregar_producto_view.html'>Agregar un nuevo producto</a></p>

@@ -45,6 +45,9 @@ mysqli_close($conexion);
         <br><br>
         <button type="submit" id="btn_eliminar">Eliminar Producto</button>
     </form>
+
+    <br><br>
+    <a href="index.php">Volver al inicio</a>
 </body>
 
 </html>

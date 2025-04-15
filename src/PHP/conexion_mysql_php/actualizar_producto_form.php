@@ -50,6 +50,9 @@ mysqli_close($conexion);
 
         <button type="submit">Actualizar Producto</button>
     </form>
+    <br><br>
+
+    <a href="index.php">Volver al inicio</a>
 </body>
 
 </html>
