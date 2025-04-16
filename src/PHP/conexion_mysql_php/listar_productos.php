@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Listar Productos</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <?php
@@ -29,6 +30,8 @@ mysqli_close($conexion);
 ?>
 
 <body>
+
+    <a class="boton-volver" href='index.php'>Volver al inicio</a>
 
     <h1>Lista de productos</h1>
 
@@ -59,11 +62,6 @@ mysqli_close($conexion);
                 <?php endforeach; ?>
             </tbody>
         </table>
-
-        <p><a href='agregar_producto_view.html'>Nuevo producto</a></p>
-        <p><a href='actualizar_producto_elegir.php'>Actualizar producto</a></p>
-        <p><a href='eliminar_producto_elegir.php'>Eliminar producto</a></p>
-        <p><a href='index.php'>Volver al inicio</a></p>
 
     <?php else: ?>
         <p>No hay productos disponibles en la base de datos.</p>

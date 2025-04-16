@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eliminar Producto</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <?php
@@ -29,6 +30,9 @@ mysqli_close($conexion);
 ?>
 
 <body>
+
+    <a class="boton-volver" href="index.php">Volver al inicio</a>
+    
     <h1>Eliminar Producto</h1>
     <p>Por favor, elija el producto que desea eliminar</p>
 
@@ -47,7 +51,6 @@ mysqli_close($conexion);
     </form>
 
     <br><br>
-    <a href="index.php">Volver al inicio</a>
 </body>
 
 </html>

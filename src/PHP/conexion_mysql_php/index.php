@@ -41,16 +41,17 @@ sistema. Asegúrate de que los formularios sean fáciles de usar y claros. -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conexion MySQL y PHP</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <h1>Bienvenido al Sistema de Gestión de Productos</h1>
+    <h1>Bienvenido/a al Sistema de Gestión de Productos</h1>
     <p>Por favor, escoge una de las opciones disponibles</p>
     <ul>
-        <li><a href="agregar_producto_view.html">Agregar un nuevo producto</a></li>
-        <li><a href="listar_productos.php">Listar Productos</a></li>
-        <li><a href="actualizar_producto_elegir.php">Actualizar Producto</a></li>
-        <li><a href="eliminar_producto_elegir.php">Eliminar Producto</a></li>
+        <li><a class="boton" href="agregar_producto_view.html">Agregar un nuevo producto</a></li>
+        <li><a class="boton" href="listar_productos.php">Listar Productos</a></li>
+        <li><a class="boton" href="actualizar_producto_elegir.php">Actualizar Producto</a></li>
+        <li><a class="boton" href="eliminar_producto_elegir.php">Eliminar Producto</a></li>
     </ul>
 </body>
 

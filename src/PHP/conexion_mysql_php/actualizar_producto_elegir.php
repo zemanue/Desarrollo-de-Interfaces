@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Actualizar Producto</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <?php
@@ -28,7 +29,10 @@ if ($resultado = mysqli_query($conexion, $consulta)) {
 mysqli_close($conexion);
 ?>
 
-<body></body>
+<body>
+
+    <a class="boton-volver" href="index.php">Volver al inicio</a>
+
     <h1>Actualizar Producto</h1>
     <p>Por favor, elija un producto existente para modificarlo</p>
 
@@ -47,7 +51,6 @@ mysqli_close($conexion);
     </form>
     <br><br>
 
-    <a href="index.php">Volver al inicio</a>
 </body>
 
 </html>

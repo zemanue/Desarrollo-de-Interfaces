@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 50px;
+    padding: 10px;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #444;
+}
+
+p {
+    text-align: center;
+}
+
+ul {
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+table th,
+table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+form {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button,
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+
+button:hover,
+a:hover {
+    opacity: 0.9;
+    background-color: #0056b3;
+}
+
+/* Botón amarillo para actualizar */
+.boton-actualizar {
+    background-color: #ffc107;
+}
+
+.boton-actualizar:hover {
+    background-color: #e0a800;
+}
+
+/* Botón rojo para eliminar */
+.boton-eliminar {
+    background-color: #dc3545;
+}
+
+.boton-eliminar:hover {
+    background-color: #c82333;
+}
+
+/* Botón de volver al inicio siempre en la esquina superior izquierda */
+.boton-volver {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #007bff;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Estilo para el botón de volver al inicio */
+.boton-volver:hover {
+    background-color: #0056b3;
+}

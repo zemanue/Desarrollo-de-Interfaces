@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Actualizar Producto</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <?php
@@ -27,6 +28,9 @@ mysqli_close($conexion);
 ?>
 
 <body>
+
+    <a class="boton-volver" href="index.php">Volver al inicio</a>
+
     <h1>Actualizar Producto</h1>
     <p>Por favor, complete el siguiente formulario para actualizar un nuevo producto.</p>
     <form action="actualizar_producto.php" method="post">
@@ -52,7 +56,6 @@ mysqli_close($conexion);
     </form>
     <br><br>
 
-    <a href="index.php">Volver al inicio</a>
 </body>
 
 </html>
