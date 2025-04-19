@@ -9,15 +9,26 @@
 </head>
 
 <?php
-include 'conexion.php'; // Incluir el archivo de conexión a la base de datos
+include 'conexion.php';
 
-// Consulta para obtener los productos
-$consulta = "SELECT * FROM productos";
+// Consulta para obtener los productos y el nombre de su categoría
+$consulta = "SELECT
+    p.id_producto,
+    p.nombre AS nombre_producto,
+    p.descripcion,
+    p.precio,
+    p.cantidad,
+    c.nombre AS nombre_categoria
+FROM
+    productos p
+JOIN
+    categorias c ON p.id_categoria = c.id_categoria";
+
 $productos = [];
 
-// Ejecutar la consulta y verificar si hay resultados (si hay productos en la BD)
+// Ejecutar la consulta y verificar si hay resultados
 if ($resultado = mysqli_query($conexion, $consulta)) {
-    // Recorrer los resultados y almacenarlos en un array (hasta que no haya más filas)
+    // Recorrer los resultados y almacenarlos en un array
     while ($fila = mysqli_fetch_assoc($resultado)) {
         $productos[] = $fila;
     }
@@ -35,29 +46,28 @@ mysqli_close($conexion);
 
     <h1>Lista de productos</h1>
 
-    <!-- Si el array $productos no está vacío -->
     <?php if (!empty($productos)): ?>
         <table>
-            <!-- Encabezado -->
             <thead>
                 <tr>
                     <th>ID</th>
                     <th>Nombre</th>
                     <th>Descripción</th>
                     <th>Precio</th>
-                    <th>Stock</th>
+                    <th>Cantidad</th>
+                    <th>Categoría</th>
                 </tr>
             </thead>
 
-            <!-- Cuerpo -->
             <tbody>
                 <?php foreach ($productos as $producto): ?>
                     <tr>
                         <td><?php echo $producto['id_producto']; ?></td>
-                        <td><?php echo $producto['nombre']; ?></td>
+                        <td><?php echo $producto['nombre_producto']; ?></td>
                         <td><?php echo $producto['descripcion']; ?></td>
                         <td><?php echo $producto['precio']; ?> €</td>
-                        <td><?php echo $producto['stock']; ?></td>
+                        <td><?php echo $producto['cantidad']; ?></td>
+                        <td><?php echo $producto['nombre_categoria']; ?></td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
@@ -65,7 +75,7 @@ mysqli_close($conexion);
 
     <?php else: ?>
         <p>No hay productos disponibles en la base de datos.</p>
-        <p><a href='agregar_producto_view.html'>Agregar un nuevo producto</a></p>
+        <p><a href='agregar_producto_form.php'>Agregar un nuevo producto</a></p>
     <?php endif; ?>
 
 </body>
