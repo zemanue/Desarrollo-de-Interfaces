@@ -8,6 +8,27 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
+<?php
+include 'conexion.php';
+
+// Consulta para obtener las categorías
+$consulta = "SELECT * FROM categorias";
+$categorias = [];
+
+// Ejecutar la consulta y verificar si hay resultados (si hay productos en la BD)
+if ($resultado = mysqli_query($conexion, $consulta)) {
+    // Recorrer los resultados y almacenarlos en un array (hasta que no haya más filas)
+    while ($fila = mysqli_fetch_assoc($resultado)) {
+        $categorias[] = $fila;
+    }
+} else {
+    echo "Error en la consulta: " . mysqli_error($conexion);
+}
+
+// Cerrar conexión
+mysqli_close($conexion);
+?>
+
 <body>
 
     <a class="boton-volver" href="index.php">Volver al inicio</a>
@@ -27,9 +48,18 @@
         <input type="number" id="precio" name="precio" step="0.01" required>
         <br><br>
 
-        <label for="stock">Stock:</label>
-        <input type="number" id="stock" name="stock" required>
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" name="cantidad" required>
         <br><br>
+
+        <select name="categoria" id="categoria" required>
+            <option value="">Seleccione una categoría</option>
+            <?php foreach ($categorias as $categoria): ?>
+                <option value="<?php echo $categoria['id_categoria']; ?>">
+                    <?php echo $categoria['id_categoria'] . ' - ' . $categoria['nombre']; ?>
+                </option>
+            <?php endforeach; ?>
+        </select>
 
         <button type="submit">Agregar Producto</button>
     </form>

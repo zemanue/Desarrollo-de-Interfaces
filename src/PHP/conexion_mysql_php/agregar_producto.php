@@ -6,9 +6,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nombre = $_POST['nombre'];
     $descripcion = $_POST['descripcion'];
     $precio = $_POST['precio'];
-    $stock = $_POST['stock'];
+    $cantidad = $_POST['cantidad'];
+    $categoria = $_POST['categoria'];
 
-    $consulta = "INSERT INTO productos (nombre, descripcion, precio, stock) VALUES ('$nombre', '$descripcion', $precio, $stock)";
+    $consulta = "INSERT INTO productos (nombre, descripcion, precio, cantidad, id_categoria) VALUES ('$nombre', '$descripcion', $precio, $cantidad, $categoria)";
 
     if (mysqli_query($conexion, $consulta)) {
         echo '<p><strong>' . $nombre . '</strong> agregado exitosamente.</p>';
