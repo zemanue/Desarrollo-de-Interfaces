@@ -32,25 +32,33 @@ mysqli_close($conexion);
 <body>
 
     <a class="boton-volver" href="index.php">Volver al inicio</a>
-    
+
     <h1>Eliminar Producto</h1>
-    <p>Por favor, elija el producto que desea eliminar</p>
 
-    <form action="eliminar_producto_confirmar.php" method="POST">
-        <select name="producto" id="producto" required>
-            <option value="">Seleccione un producto</option>
-            <?php foreach ($productos as $producto): ?>
-                <option value="<?php echo $producto['id_producto']; ?>">
-                    <?php echo $producto['id_producto'] . ' - ' . $producto['nombre']; ?>
-                </option>
-            <?php endforeach; ?>
-        </select>
+    <?php if (!empty($productos)): ?>
 
+        <p>Por favor, elija el producto que desea eliminar</p>
+
+        <form action="eliminar_producto_confirmar.php" method="POST">
+            <select name="producto" id="producto" required>
+                <option value="">Seleccione un producto</option>
+                <?php foreach ($productos as $producto): ?>
+                    <option value="<?php echo $producto['id_producto']; ?>">
+                        <?php echo $producto['id_producto'] . ' - ' . $producto['nombre']; ?>
+                    </option>
+                <?php endforeach; ?>
+            </select>
+
+            <br><br>
+            <button type="submit" id="btn_eliminar">Eliminar Producto</button>
+        </form>
         <br><br>
-        <button type="submit" id="btn_eliminar">Eliminar Producto</button>
-    </form>
 
-    <br><br>
+    <?php else: ?>
+        <p>No hay productos disponibles en la base de datos.</p>
+        <p><a href='agregar_producto_view.php'>Agregar un nuevo producto</a></p>
+    <?php endif; ?>
+
 </body>
 
 </html>
