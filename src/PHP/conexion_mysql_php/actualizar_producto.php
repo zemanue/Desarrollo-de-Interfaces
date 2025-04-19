@@ -3,13 +3,16 @@
 include 'conexion.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $id = $_POST['id_producto'];
+    $id_producto = $_POST['id_producto'];
     $nombre = $_POST['nombre'];
     $descripcion = $_POST['descripcion'];
     $precio = $_POST['precio'];
-    $stock = $_POST['stock'];
+    $cantidad = $_POST['cantidad'];
+    $categoria = $_POST['categoria'];
 
-    $consulta = "UPDATE productos SET nombre = '$nombre', descripcion = '$descripcion', precio = $precio, stock = $stock WHERE id_producto = $id";
+    $consulta = "UPDATE productos 
+    SET nombre = '$nombre', descripcion = '$descripcion', precio = $precio, cantidad = $cantidad, id_categoria = $categoria 
+    WHERE id_producto = $id_producto";
 
     if (mysqli_query($conexion, $consulta)) {
         echo '<p><strong>' . $nombre . '</strong> actualizado exitosamente.</p>';
