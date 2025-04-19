@@ -56,7 +56,7 @@ mysqli_close($conexion);
 
     <?php else: ?>
         <p>No hay productos disponibles en la base de datos.</p>
-        <p><a href='agregar_producto_view.php'>Agregar un nuevo producto</a></p>
+        <p><a href='agregar_producto_form.php'>Agregar un nuevo producto</a></p>
     <?php endif; ?>
 
 
